@@ -1,0 +1,80 @@
+$white: #ffffff;
+$text-black: #000000;
+$mint: #37d8bd;
+$text-gray: #777777;
+$text-darkgray: #444444;
+
+.popular-item {
+  background-color: $white;
+
+  .popular-item__type {
+    width: 246px;
+    height: 24px;
+    color: $text-black;
+    font-family: @font-face;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .popular-item__title {
+    width: 133px;
+    height: 16px;
+    color: $mint;
+    font-family: @font-face;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .popular-item__text {
+    width: 249px;
+    height: 63px;
+    color: $text-darkgray;
+    font-family: @font-face;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .popular-item__table {
+    color: $text-darkgray;
+    font-family: @font-face;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .popular-item__table-key {
+    width: 67px;
+    height: 92px;
+  }
+
+  .popular-item__table-value {
+    width: 129px;
+    height: 93px;
+  }
+
+  .popular-item__image {
+    width: 260px;
+    height: 315px;
+  }
+
+  .popular-item__price {
+    width: 124px;
+    height: 17px;
+    color: $text-darkgray;
+    font-family: @font-face;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .popular-item__button {
+    width: 259px;
+    height: 52px;
+    border: 2px solid #444444;
+    background-color: $white;
+  }
+}

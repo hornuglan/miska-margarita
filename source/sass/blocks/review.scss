@@ -1,0 +1,36 @@
+$dark-gray: #444444;
+$text-black: #000000;
+
+.review {
+  .review__text {
+    width: 255px;
+    height: 252px;
+    color: $dark-gray;
+    font-family: @font-face;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  .review__author {
+    width: 241px;
+    height: 45px;
+    color: $text-black;
+    font-family: @font-face;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  .review__author-name {
+    font-family: @font-face;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  .review__author-nickname {
+    color: $dark-gray;
+    font-family: @font-face;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}

@@ -1,0 +1,17 @@
+$white: #ffffff;
+$light-gray: #ececec;
+
+.main-menu {
+  background-color: $white;
+
+  .main-menu__button-icon {
+    width: 20px;
+    height: 14px;
+  }
+
+  .main-menu__list-item {
+    width: 320px;
+    height: 79px;
+    box-shadow: 0 1px 0 $light-gray, inset 0 1px 0 $light-gray;
+  }
+}

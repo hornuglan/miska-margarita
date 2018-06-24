@@ -1,0 +1,9 @@
+$white: #ffffff;
+$dark-gray: #444444;
+
+.order-button {
+  width: 192px;
+  height: 52px;
+  border: 2px solid $dark-gray;
+  background-color: $white;
+}
