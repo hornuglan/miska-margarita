@@ -1,63 +1,48 @@
-$white: #ffffff;
-$text-black: #000000;
-$mint: #63d1bb;
-
 .features-list {
   background-color: $white;
 
-  .features-list__advantages {
+  &__advantages {
     color: $text-black;
-    font-family: @font-face;
     font-size: 17px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.18;
+    background-color: $mint;
+    background-repeat: no-repeat;
+  }
 
-    &--ec0 {
-      background-image: url("img/img/icon-feature-flower.svg");
-      background-repeat: no-repeat;
-      width: 32px;
-      height: 37px;
-      background-color: $mint;
-    }
+  &--eco {
+    background-image: url("/css/img/icon-feature-flower.svg");
+    width: 32px;
+    height: 37px;
+  }
 
-    &--style {
-      background-image: url("img/img/icon-feature-money.svg");
-      background-repeat: no-repeat;
-      width: 47px;
-      height: 27px;
-      background-color: $mint;
-    }
+  &--style {
+    background-image: url("/css/img/icon-feature-money.svg");
+    width: 47px;
+    height: 27px;
+  }
 
-    &--like {
-      background-image: url("img/img/icon-feature-heart.svg");
-      background-repeat: no-repeat;
-      width: 34px;
-      height: 27px;
-      background-color: $mint;
-    }
+  &--like {
+    background-image: url("/css/img/icon-feature-heart.svg");
+    width: 34px;
+    height: 27px;
+  }
 
-    &--love {
-      background-image: url("img/img/icon-feature-ball.svg");
-      background-repeat: no-repeat;
-      width: 35px;
-      height: 34px;
-      background-color: $mint;
-    }
+  &--love {
+    background-image: url("/css/img/icon-feature-ball.svg");
+    width: 35px;
+    height: 34px;
+  }
 
-    &--native {
-      background-image: url("img/img/icon-feature-rocket.svg");
-      background-repeat: no-repeat;
-      width: 55px;
-      height: 23px;
-      background-color: $mint;
-    }
+  &--native {
+    background-image: url("/css/img/icon-feature-rocket.svg");
+    width: 55px;
+    height: 23px;
+  }
 
-    &--gift {
-      background-image: url("img/img/icon-feature-gift.svg");
-      background-repeat: no-repeat;
-      width: 33px;
-      height: 32px;
-      background-color: $mint;
-    }
+  &--gift {
+    background-image: url("/css/img/icon-feature-gift.svg");
+    width: 33px;
+    height: 32px;
   }
 }

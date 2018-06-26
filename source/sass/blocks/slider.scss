@@ -1,10 +1,7 @@
-$white: #ffffff;
-$light-gray: #ececec;
-
 .slider {
   background-color: $white;
 
-  .slider__arrow {
+  &__arrow {
     width: 260px;
     height: 52px;
     border: 1px solid $light-gray;

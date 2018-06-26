@@ -1,0 +1,21 @@
+.color {
+  &__checkbox {
+    width: 40px;
+    height: 39px;
+    border: 2px solid $dark-gray;
+
+    &:checked {
+      width: 22px;
+      height: 16px;
+    }
+  }
+
+  &__label {
+    width: 56px;
+    height: 15px;
+    color: $text-black;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.06;
+  }
+}

@@ -1,140 +1,129 @@
-$dark-gray: #444444;
-$mint: #63d1bb;
-$white: #ffffff;
-$text-black: #000000;
-
 .form {
   background-color: $white;
 
-  .form__intro {
+  &__intro {
     width: 242px;
     height: 85px;
     color: $dark-gray;
-    font-family: @font-face;
     font-size: 13px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.85;
   }
 
-  .form__legend {
+  &__legend {
     width: 36px;
     height: 12px;
     color: $mint;
-    font-family: @font-face;
     font-size: 17px;
     font-weight: 700;
-    line-height: 16px;
+    line-height: 0.94;
     text-transform: uppercase;
   }
 
-  .form__radio {
-    color: $text-black;
-    font-family: @font-face;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 18px;
-  }
-
-  .form__radio-button {
+  &__radio-button {
     width: 40px;
     height: 40px;
     border: 2px solid $dark-gray;
     background-color: $white;
   }
 
-  .form__radio-label {
+  &__radio-label {
     color: $text-black;
-    font-family: @font-face;
     font-size: 17px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.06;
   }
 
-  .form__personal-label {
+  &__personal-label {
     width: 41px;
     height: 14px;
     color: $text-black;
-    font-family: @font-face;
     font-size: 17px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 1.06;
   }
 
-  .form__personal-name {
+  &__personal-name {
     width: 260px;
     height: 52px;
     box-shadow: inset 0 -2px 0 $text-black;
 
-    &:-moz-placeholder {
+    &::placeholder {
       opacity: 0.3;
       color: $dark-gray;
-      font-family: @font-face;
       font-size: 17px;
       font-weight: 400;
-      line-height: 18px;
+      line-height: 1.06;
     }
   }
 
-  .form__input-tel {
+  &__input-tel {
     width: 260px;
     height: 52px;
     box-shadow: inset 0 -2px 0 $text-black;
 
-    &:-moz-placeholder {
+    &::placeholder {
       width: 110px;
       height: 13px;
       opacity: 0.3;
       color: $dark-gray;
-      font-family: @font-face;
       font-size: 17px;
       font-weight: 400;
-      line-height: 18px;
+      line-height: 1.06;
     }
   }
 
-  .form__input-email {
+  &__input-email {
     width: 260px;
     height: 52px;
     box-shadow: inset 0 -2px 0 $text-black;
 
-    &:-moz-placeholder {
+    &::placeholder {
       width: 91px;
       height: 14px;
       opacity: 0.3;
       color: $dark-gray;
-      font-family: @font-face;
       font-size: 17px;
       font-weight: 400;
-      line-height: 18px;
+      line-height: 1.06;
     }
   }
 
-  .form__additional-textarea {
+  &__additional-textarea {
     width: 260px;
     height: 142px;
     box-shadow: inset 0 -2px 0 $text-black;
     border: 2px solid $dark-gray;
     background-color: $white;
 
-    &:-moz-placeholder {
+    &::placeholder {
       width: 163px;
       height: 35px;
       opacity: 0.3;
       color: $dark-gray;
-      font-family: @font-face;
       font-size: 17px;
       font-weight: 400;
-      line-height: 18px;
+      line-height: 1.06;
     }
   }
 
-  .form__text-note {
+  &__text-note {
     width: 247px;
     height: 14px;
     color: $dark-gray;
-    font-family: @font-face;
     font-size: 14px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 1.14;
+  }
+
+  &__submit-button {
+    width: 260px;
+    height: 52px;
+    border: 2px solid $dark-gray;
+    background-color: $white;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 0.94;
+    text-transform: uppercase;
   }
 }

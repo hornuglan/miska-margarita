@@ -1,80 +1,69 @@
-$white: #ffffff;
-$text-black: #000000;
-$mint: #37d8bd;
-$text-gray: #777777;
-$text-darkgray: #444444;
-
 .popular-item {
   background-color: $white;
 
-  .popular-item__type {
+  &__type {
     width: 246px;
     height: 24px;
     color: $text-black;
-    font-family: @font-face;
     font-size: 25px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.2;
   }
 
-  .popular-item__title {
+  &__title {
     width: 133px;
     height: 16px;
     color: $mint;
-    font-family: @font-face;
     font-size: 17px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 1.18;
     text-transform: uppercase;
   }
 
-  .popular-item__text {
+  &__text {
     width: 249px;
     height: 63px;
     color: $text-darkgray;
-    font-family: @font-face;
     font-size: 15px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.6;
   }
 
-  .popular-item__table {
+  &__table {
     color: $text-darkgray;
-    font-family: @font-face;
     font-size: 15px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 1.33;
   }
 
-  .popular-item__table-key {
+  &__table-key {
     width: 67px;
     height: 92px;
   }
 
-  .popular-item__table-value {
+  &__table-value {
     width: 129px;
     height: 93px;
   }
 
-  .popular-item__image {
+  &__image {
     width: 260px;
     height: 315px;
   }
 
-  .popular-item__price {
+  &__price {
     width: 124px;
     height: 17px;
     color: $text-darkgray;
-    font-family: @font-face;
     font-size: 17px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.41;
   }
 
-  .popular-item__button {
+  &__button {
     width: 259px;
     height: 52px;
-    border: 2px solid #444444;
+    border: 2px solid $text-darkgray;
     background-color: $white;
   }
 }

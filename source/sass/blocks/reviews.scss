@@ -1,18 +1,14 @@
-$text-black:#000000;
-$dark-gray: #444444;
-
 .reviews {
-  .reviews__title {
+  &__title {
     width: 105px;
     height: 20px;
     color: $text-black;
-    font-family: @font-face;
     font-size: 25px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.2;
   }
 
-  .reviews__create {
+  &__create {
     width: 260px;
     height: 52px;
     border: 2px solid $dark-gray;

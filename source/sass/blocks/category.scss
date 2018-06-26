@@ -1,24 +1,20 @@
-$mint: #63d1bb;
-$dark-mint: #56c3b2;
-
 .category {
-  .category__item {
+  &__item {
     width: 320px;
     height: 103px;
     color: $white;
-    font-family: @font-face;
     font-size: 19px;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.26;
 
     &--interior {
       width: 106px;
-      background: url("img/img/icon-interior.svg") no-repeat opacity 0.5;
+      background: url("/css/img/icon-interior.svg") no-repeat opacity 0.5;
     }
 
     &--toys {
       width: 89px;
-      background: url("img/img/icon-toy.svg") no-repeat opacity 0.5;
+      background: url("/css/img/icon-toy.svg") no-repeat opacity 0.5;
     }
   }
 }

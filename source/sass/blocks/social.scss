@@ -1,18 +1,17 @@
 .social {
-  .social__link {
+  &__link {
+    background-repeat: no-repeat;
+
     &--instagram {
-      background-image: url("img/img/icon-insta.svg");
-      background-repeat: no-repeat;
+      background-image: url("/css/img/icon-insta.svg");
     }
 
     &--fb {
-      background-image: url("img/img/icon-fb.svg");
-      background-repeat: no-repeat;
+      background-image: url("/css/img/icon-fb.svg");
     }
 
     &--twitter {
-      background-image: url("img/img/icon-twitter.svg");
-      background-repeat: no-repeat;
+      background-image: url("/css/img/icon-twitter.svg");
     }
   }
 }

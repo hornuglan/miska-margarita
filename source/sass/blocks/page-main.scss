@@ -1,15 +1,12 @@
-$text-darkgray: #010000;
-
 .page-main {
-  .page-main__header-title {
+  &__header-title {
     &--main {
       width: 244px;
       height: 87px;
-      color: #010000;
-      font-family: @font-face;
+      color: $text-black;
       font-size: 27px;
       font-weight: 700;
-      line-height: 30px;
+      line-height: 1.11;
     }
   }
 }

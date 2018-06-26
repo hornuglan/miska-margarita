@@ -1,9 +1,10 @@
-$white: #ffffff;
-$dark-gray: #444444;
-
 .order-button {
   width: 192px;
   height: 52px;
   border: 2px solid $dark-gray;
   background-color: $white;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 0.94;
+  text-transform: uppercase;
 }

@@ -1,18 +1,14 @@
-$text-black: #000000;
-$mint: #63d1bb;
-
 .copyright {
-  .copyright__text {
+  &__text {
     width: 125px;
     height: 20px;
     color: $text-black;
-    font-family: @font-face;
     font-size: 19px;
     font-weight: 700;
-    line-height: 18px;
+    line-height: 0.95;
   }
 
-  .copyright__link {
+  &__link {
     width: 27px;
     height: 34px;
     background-color: $mint;
