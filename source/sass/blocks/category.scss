@@ -1,0 +1,20 @@
+.category {
+  &__item {
+    width: 320px;
+    height: 103px;
+    color: $white;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.26;
+
+    &--interior {
+      width: 106px;
+      background: url("/css/img/icon-interior.svg") no-repeat opacity 0.5;
+    }
+
+    &--toys {
+      width: 89px;
+      background: url("/css/img/icon-toy.svg") no-repeat opacity 0.5;
+    }
+  }
+}

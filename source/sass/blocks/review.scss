@@ -1,0 +1,30 @@
+.review {
+  &__text {
+    width: 255px;
+    height: 252px;
+    color: $dark-gray;
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  &__author {
+    width: 241px;
+    height: 45px;
+    color: $text-black;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
+  &__author-name {
+    font-weight: 700;
+    line-height: 1.41;
+  }
+
+  &__author-nickname {
+    color: $dark-gray;
+    font-weight: 400;
+    line-height: 1.76;
+  }
+}

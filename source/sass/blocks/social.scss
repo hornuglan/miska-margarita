@@ -1,0 +1,17 @@
+.social {
+  &__link {
+    background-repeat: no-repeat;
+
+    &--instagram {
+      background-image: url("/css/img/icon-insta.svg");
+    }
+
+    &--fb {
+      background-image: url("/css/img/icon-fb.svg");
+    }
+
+    &--twitter {
+      background-image: url("/css/img/icon-twitter.svg");
+    }
+  }
+}

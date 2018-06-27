@@ -1,0 +1,31 @@
+.promo {
+  width: 260px;
+  height: 503px;
+  border: 1px solid $light-gray;
+  background-color: $white;
+
+  &__title {
+    width: 126px;
+    height: 41px;
+    color: $text-black;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.41;
+    background-image: url("/css/img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__video {
+    width: 260px;
+    height: 150px;
+  }
+
+  &__text {
+    width: 183px;
+    height: 109px;
+    color: $dark-gray;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.85;
+  }
+}

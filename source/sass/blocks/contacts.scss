@@ -1,0 +1,39 @@
+.contacts {
+  &__title {
+    width: 91px;
+    height: 14px;
+    color: $text-black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.67;
+  }
+
+  &__details {
+    color: $dark-gray;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 2;
+  }
+
+  &__details-key {
+    width: 46px;
+    height: 76px;
+  }
+
+  &__details-value {
+    width: 178px;
+    height: 166px;
+  }
+
+  &__button {
+    width: 260px;
+    height: 52px;
+    border: 2px solid $dark-gray;
+    background-color: $white;
+    color: $dark-gray;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: uppercase;
+  }
+}

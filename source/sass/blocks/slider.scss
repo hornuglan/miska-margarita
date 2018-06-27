@@ -1,0 +1,20 @@
+.slider {
+  background-color: $white;
+
+  &__arrow {
+    width: 260px;
+    height: 52px;
+    border: 1px solid $light-gray;
+    background-color: $white;
+
+    &--previous {
+      width: 50px;
+      height: 26px;
+    }
+
+    &--next {
+      width: 50px;
+      height: 26px;
+    }
+  }
+}

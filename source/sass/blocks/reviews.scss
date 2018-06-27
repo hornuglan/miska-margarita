@@ -1,0 +1,17 @@
+.reviews {
+  &__title {
+    width: 105px;
+    height: 20px;
+    color: $text-black;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  &__create {
+    width: 260px;
+    height: 52px;
+    border: 2px solid $dark-gray;
+    background-color: $white;
+  }
+}

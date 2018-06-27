@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
 
     <div class="logo">
       <a class="logo__image">
-        <img src="http://placehold.it/150x100" alt="Mishka">
+        <img src="img/img/logo-mobile.svg" alt="Mishka">
       </a>
     </div>
 
@@ -58,28 +59,28 @@
       <header class="popular-item__header">
         <h2 class="popular-item__type">Вязаные корзинки</h2>
         <span class="popular-item__title">Товар недели</span>
-      </header>>
+      </header>
       <article class="popular-item__description">
         <p class="popular-item__text">
           Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках, и&nbsp;трех размерах
         </p>
         <table class="popular-item__table">
           <tr>
-            <td>Цвет:</td>
-            <td>&laquo;Тиффани&raquo;/серый</td>
+            <td class="popular-item__table-key">Цвет:</td>
+            <td class="popular-item__table-value">&laquo;Тиффани&raquo;/серый</td>
           </tr>
           <tr>
-            <td>Диаметр:</td>
-            <td>25&nbsp;см</td>
+            <td class="popular-item__table-key">Диаметр:</td>
+            <td class="popular-item__table-value">25&nbsp;см</td>
           </tr>
           <tr>
-            <td>Высота:</td>
-            <td>15&nbsp;см</td>
+            <td class="popular-item__table-key">Высота:</td>
+            <td class="popular-item__table-value">15&nbsp;см</td>
           </tr>
         </table>
 
-        <img class="popular-item__image" src="http://placehold.it/150x100" alt="Вязаная корзинка">
-      </article>>
+        <img class="popular-item__image" src="img/img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка">
+      </article>
       <footer class="popular-item__footer">
         <span class="popular-item__price">Цена: 990&nbsp;руб.</span>
         <a href="#" class="popular-item__button">Заказать</a>
@@ -92,12 +93,11 @@
       <div class="features-list">
 
         <ul class="features-list__advantages">
-          <li class="features-list__advantages features-list__advantages--eco">Экологически чистые материалы</li>
-          <li class="features-list__advantages features-list__advantages--style">Скандинавский стиль по&nbsp;российской цене</li>
-          <li class="features-list__advantages features-list__advantages--like">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="features-list__advantages features-list__advantages--love">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
-          <li class="features-list__advantages features-list__advantages--native">Поддержка отечественного производителя</li>
-          <li class="features-list__advantages features-list__advantages--gift">Поставляется в&nbsp;подарочной упаковке</li>
+          <li class="features-list__item features-list__item--eco">Экологически чистые материалы</li>
+          <li class="features-list__item features-list__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="features-list__item features-list__item--love">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
+          <li class="features-list__item features-list__item--native">Поддержка отечественного производителя</li>
+          <li class="features-list__item features-list__item--gift">Поставляется в&nbsp;подарочной упаковке</li>
         </ul>
       </div>
 
@@ -130,8 +130,8 @@
         </blockquote>
       </article>
       <div class="slider__navigation">
-        <button type="button" class="slider__arrow slider__arrow--previous" title="Prev review">Предыдущий отзыв</button>
-        <button type="button" class="slider__arrow slider__arrow--next" title="Next review">Следующий отзыв</button>
+        <button type="button" class="slider__arrow slider__arrow--previous" title="Prev review" aria-label="Предыдущий отзыв">Предыдущий отзыв</button>
+        <button type="button" class="slider__arrow slider__arrow--next" title="Next review" aria-label="Следующий отзыв">Следующий отзыв</button>
       </div>
       <a class="reviews__create">Написать</a>
     </section>
@@ -140,18 +140,18 @@
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__details">
         <tr>
-          <td>e-mail:</td>
-          <td>
+          <td class="contacts__details-key">e-mail:</td>
+          <td class="contacts__details-value">
             <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
           </td>
         </tr>
         <tr>
-          <td>адрес:</td>
-          <td>г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</td>
+          <td class="contacts__details-key">адрес:</td>
+          <td class="contacts__details-value">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101</td>
         </tr>
       </table>
       <article class="contacts__map">
-        <img src="http://placehold.it/150x100" alt="Карта">
+        <img src="img/img/map-mobile@1x.jpg" alt="Карта">
       </article>
       <button type="button" class="contacts__button">Напишите нам</button>
     </section>
@@ -162,20 +162,20 @@
 
       <ul class="social">
         <li>
-          <a class="social__link social__link--instagram" href="#"></a>
+          <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм"></a>
         </li>
         <li>
-          <a class="social__link social__link--fb" href="#"></a>
+          <a class="social__link social__link--fb" href="#" aria-label="Фэйсбук"></a>
         </li>
         <li>
-          <a class="social__link social__link--twitter" href="#"></a>
+          <a class="social__link social__link--twitter" href="#" aria-label="Твиттер"></a>
         </li>
       </ul>
 
       <div class="page-footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="button copyright__link" href="#">
-          <img src="http://placehold.it/150x100" class="copyright__logo" alt="logo">
+          <img src="img/img/logo-htmlacademy.svg" class="copyright__logo" alt="logo">
         </a>
       </div>
     </div>

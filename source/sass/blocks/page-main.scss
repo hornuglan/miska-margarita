@@ -1,0 +1,12 @@
+.page-main {
+  &__header-title {
+    &--main {
+      width: 244px;
+      height: 87px;
+      color: $text-black;
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 1.11;
+    }
+  }
+}

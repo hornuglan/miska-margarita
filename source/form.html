@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Мишка. Форма заказа</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body>
@@ -102,7 +103,7 @@
           <label class="form__personal-label" for="name">Имя:</label>
         </div>
         <div class="form__personal form__personal-surname">
-          <input class="form__personal-surname" name="surname" id="surname" type="text" placeholder="Укажите фамилию*" required>
+          <input class="form__personal-name" name="surname" id="surname" type="text" placeholder="Укажите фамилию*" required>
           <label class="form__personal-label" for="surname">Фамилия:</label>
         </div>
         <div class="form__personal form__personal-middle-name">
@@ -138,7 +139,7 @@
         </div>
       </fieldset>
 
-      <span>*Поля обязательны для заполнения</span>
+      <span class="form__text-note">*Поля обязательны для заполнения</span>
       <div class="form__submit-button">
         <button class="form__submit-button" type="submit" name="submit-button">Отправить заказ</button>
       </div>
@@ -151,13 +152,13 @@
 
       <ul class="social">
         <li>
-          <a class="social__link social__link--instagram" href="#"></a>
+          <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм"></a>
         </li>
         <li>
-          <a class="social__link social__link--fb" href="#"></a>
+          <a class="social__link social__link--fb" href="#" aria-label="Фэйсбук"></a>
         </li>
         <li>
-          <a class="social__link social__link--twitter" href="#"></a>
+          <a class="social__link social__link--twitter" href="#" aria-label="Твиттер"></a>
         </li>
       </ul>
 
