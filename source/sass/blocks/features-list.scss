@@ -1,48 +1,48 @@
 .features-list {
   background-color: $white;
 
-  &__advantages {
+  &__item {
     color: $text-black;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.18;
     background-color: $mint;
     background-repeat: no-repeat;
-  }
 
-  &--eco {
-    background-image: url("/css/img/icon-feature-flower.svg");
-    width: 32px;
-    height: 37px;
-  }
+    &--eco {
+      background-image: url("/css/img/icon-feature-flower.svg");
+      width: 32px;
+      height: 37px;
+    }
 
-  &--style {
-    background-image: url("/css/img/icon-feature-money.svg");
-    width: 47px;
-    height: 27px;
-  }
+    &--style {
+      background-image: url("/css/img/icon-feature-money.svg");
+      width: 47px;
+      height: 27px;
+    }
 
-  &--like {
-    background-image: url("/css/img/icon-feature-heart.svg");
-    width: 34px;
-    height: 27px;
-  }
+    &--like {
+      background-image: url("/css/img/icon-feature-heart.svg");
+      width: 34px;
+      height: 27px;
+    }
 
-  &--love {
-    background-image: url("/css/img/icon-feature-ball.svg");
-    width: 35px;
-    height: 34px;
-  }
+    &--love {
+      background-image: url("/css/img/icon-feature-ball.svg");
+      width: 35px;
+      height: 34px;
+    }
 
-  &--native {
-    background-image: url("/css/img/icon-feature-rocket.svg");
-    width: 55px;
-    height: 23px;
-  }
+    &--native {
+      background-image: url("/css/img/icon-feature-rocket.svg");
+      width: 55px;
+      height: 23px;
+    }
 
-  &--gift {
-    background-image: url("/css/img/icon-feature-gift.svg");
-    width: 33px;
-    height: 32px;
+    &--gift {
+      background-image: url("/css/img/icon-feature-gift.svg");
+      width: 33px;
+      height: 32px;
+    }
   }
 }

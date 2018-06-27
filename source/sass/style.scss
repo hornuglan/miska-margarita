@@ -1,3 +1,8 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "scaffolding.scss";
 @import "blocks/catalog-item.scss";
 @import "blocks/catalog.scss";
 @import "blocks/category.scss";
@@ -19,7 +24,4 @@
 @import "blocks/reviews.scss";
 @import "blocks/slider.scss";
 @import "blocks/social.scss";
-@import "variables.scss";
-@import "fonts.scss";
-@import "mixins.scss";
-@import "scaffolding.scss";
+
