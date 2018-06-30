@@ -47,3 +47,100 @@
     opacity: 0.2;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    flex-direction: row;
+
+    &__img {
+      width: 334px;
+      height: 334px;
+    }
+
+    &__features {
+      display: flex;
+      flex-direction: column;
+      width: 335px;
+      height: 334px;
+      border: 1px solid $light-gray;
+      background-color: $white;
+    }
+
+    &__title-name {
+      color: $text-black;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__title-description {
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+    }
+
+    &__price-rub {
+      height: 17px;
+      color: $text-black;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.41;
+    }
+
+    &__price-icon {
+      width: 21px;
+      height: 18px;
+      opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    display: flex;
+    flex-direction: column;
+
+    &__img {
+      width: 316px;
+      height: 462px;
+    }
+
+    &__features {
+      display: flex;
+      flex-direction: column;
+      height: 197px;
+      border: 1px solid $light-gray;
+      background-color: $white;
+    }
+
+    &__title-name {
+      color: $text-black;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__title-description {
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+    }
+
+    &__price-rub {
+      height: 17px;
+      color: $text-black;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.41;
+    }
+
+    &__price-icon {
+      width: 21px;
+      height: 18px;
+      opacity: 0.2;
+    }
+  }
+}

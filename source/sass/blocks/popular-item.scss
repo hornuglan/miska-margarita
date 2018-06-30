@@ -67,3 +67,161 @@
     background-color: $white;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .popular-item {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+
+    &__type {
+      width: 420px;
+      height: 42px;
+      color: $text-black;
+      font-size: 43px;
+      font-weight: 700;
+      line-height: 1.16;
+    }
+
+    &__title {
+      width: 70px;
+      height: 33px;
+      color: $mint;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      width: 282px;
+      height: 77px;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+
+    &__table {
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.33;
+    }
+
+    &__table-key {
+      width: 67px;
+      height: 92px;
+    }
+
+    &__table-value {
+      width: 129px;
+      height: 93px;
+    }
+
+    &__image {
+      width: 333px;
+      height: 404px;
+    }
+
+    &__price {
+      width: 144px;
+      height: 21px;
+      color: $dark-gray;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__button {
+      width: 292px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+      background-color: $white;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.18;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-item {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+
+    &__type {
+      width: 515px;
+      height: 51px;
+      color: $text-black;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 1.08;
+    }
+
+    &__title {
+      width: 70px;
+      height: 33px;
+      color: $mint;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    &__text {
+      width: 282px;
+      height: 77px;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+
+    &__table {
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.33;
+    }
+
+    &__table-key {
+      width: 67px;
+      height: 92px;
+    }
+
+    &__table-value {
+      width: 129px;
+      height: 93px;
+    }
+
+    &__image {
+      width: 525px;
+      height: 636px;
+    }
+
+    &__price {
+      width: 144px;
+      height: 21px;
+      color: $dark-gray;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__button {
+      width: 292px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+      background-color: $white;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.18;
+      text-transform: uppercase;
+    }
+  }
+}

@@ -15,3 +15,60 @@
     background-color: $white;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      width: 179px;
+      height: 33px;
+      color: $text-black;
+      font-size: 43px;
+      font-weight: 700;
+      line-height: 1.16;
+    }
+
+    &__create {
+      width: 175px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+      background-color: $white;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.18;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__title {
+      width: 218px;
+      height: 40px;
+      color: $text-black;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 1.08;
+    }
+
+    &__create {
+      width: 175px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+      background-color: $white;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.18;
+      text-transform: uppercase;
+    }
+  }
+}

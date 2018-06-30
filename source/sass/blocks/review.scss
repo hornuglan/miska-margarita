@@ -28,3 +28,69 @@
     line-height: 1.76;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    display: flex;
+    justify-content: center;
+
+    &__text {
+      width: 642px;
+      height: 107px;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+
+    &__author {
+      width: 254px;
+      height: 45px;
+      color: $text-black;
+    }
+
+    &__author-name {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.33;
+    }
+
+    &__author-nickname {
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    &__text {
+      width: 768px;
+      height: 77px;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+
+    &__author {
+      width: 241px;
+      height: 45px;
+      color: $text-black;
+      font-size: 17px;
+    }
+
+    &__author-name {
+      font-weight: 700;
+      line-height: 1.41;
+    }
+
+    &__author-nickname {
+      color: $dark-gray;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+  }
+}

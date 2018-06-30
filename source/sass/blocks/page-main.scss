@@ -10,3 +10,33 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    &__header-title {
+      &--main {
+        width: 494px;
+        height: 95px;
+        color: $text-black;
+        font-size: 43px;
+        font-weight: 700;
+        line-height: 1.16;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    &__header-title {
+      &--main {
+        width: 604px;
+        height: 112px;
+        color: $text-black;
+        font-size: 53px;
+        font-weight: 700;
+        line-height: 1.08;
+      }
+    }
+  }
+}

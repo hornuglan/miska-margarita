@@ -14,3 +14,41 @@
     background-color: $mint;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    &__text {
+      width: 125px;
+      height: 20px;
+      color: $text-black;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 0.95;
+    }
+
+    &__link {
+      width: 27px;
+      height: 34px;
+      background-color: $mint;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    &__text {
+      width: 125px;
+      height: 20px;
+      color: $text-black;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 0.95;
+    }
+
+    &__link {
+      width: 27px;
+      height: 34px;
+      background-color: $mint;
+    }
+  }
+}

@@ -9,12 +9,72 @@
 
     &--interior {
       width: 106px;
-      background: url("/css/img/icon-interior.svg") no-repeat opacity 0.5;
+      background-image: url("/source/img/icon-interior.svg") no-repeat opacity 0.5;
     }
 
     &--toys {
       width: 89px;
-      background: url("/css/img/icon-toy.svg") no-repeat opacity 0.5;
+      background-image: url("/source/img/icon-toy.svg") no-repeat opacity 0.5;
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .category {
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+      width: 334px;
+      height: 119px;
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+
+      &--interior {
+        background-color: $mint;
+        width: 111px;
+        height: 50px;
+        background-image: url("/source/img/icon-interior.svg") no-repeat opacity 0.5;
+      }
+
+      &--toys {
+        background-color: $dark-mint;
+        width: 94px;
+        height: 50px;
+        background-image: url("/source/img/icon-toy.svg") no-repeat opacity 0.5;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category {
+    display: flex;
+    flex-direction: row;
+
+    &__item {
+      width: 525px;
+      height: 119px;
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+
+      &--interior {
+        background-color: $mint;
+        width: 111px;
+        background-image: url("/source/img/icon-interior.svg") no-repeat opacity 0.5;
+      }
+
+      &--toys {
+        background-color: $dark-mint;
+        width: 94px;
+        background-image: url("/source/img/icon-toy.svg") no-repeat opacity 0.5;
+      }
+    }
+  }
+}
+
+

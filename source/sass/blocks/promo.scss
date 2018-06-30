@@ -29,3 +29,69 @@
     line-height: 1.85;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      width: 241px;
+      height: 20px;
+      color: $text-black;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__video {
+      width: 668px;
+      height: 455px;
+      order: 1;
+    }
+
+    &__text {
+      width: 581px;
+      height: 46px;
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    width: 1049px;
+    height: 455px;
+    border: 1px solid $light-gray;
+    background-color: $white;
+
+    &__title {
+      width: 148px;
+      height: 44px;
+      color: $text-black;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__video {
+      width: 682px;
+      height: 455px;
+      order: 1;
+    }
+
+    &__text {
+      width: 222px;
+      height: 106px;
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+    }
+  }
+}

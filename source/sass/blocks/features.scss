@@ -8,3 +8,29 @@
     line-height: 1.2;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .features {
+    &__title {
+      width: 316px;
+      height: 42px;
+      color: $text-black;
+      font-size: 43px;
+      font-weight: 700;
+      line-height: 1.16;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    &__title {
+      width: 387px;
+      height: 51px;
+      color: $text-black;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 1.08;
+    }
+  }
+}

@@ -19,3 +19,61 @@
     line-height: 1.06;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .color {
+    display: flex;
+    justify-content: center;
+    width: 768px;
+    height: 304px;
+    background-color: gray;
+
+    &__checkbox {
+      width: 54px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+
+      &:checked {
+        width: 33px;
+        height: 22px;
+      }
+    }
+
+    &__label {
+      width: 63px;
+      height: 16px;
+      color: $text-black;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 0.95;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color {
+    width: 1150px;
+    height: 228px;
+    background-color: $gray;
+
+    &__checkbox {
+      width: 54px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+
+      &:checked {
+        width: 33px;
+        height: 22px;
+      }
+    }
+
+    &__label {
+      width: 63px;
+      height: 16px;
+      color: $text-black;
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 0.95;
+    }
+  }
+}

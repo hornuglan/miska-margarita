@@ -37,3 +37,99 @@
     text-transform: uppercase;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      width: 214px;
+      height: 32px;
+      color: $text-black;
+      font-size: 43px;
+      font-weight: 700;
+      line-height: 1.16;
+    }
+
+    &__details {
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+
+    &__details-key {
+      width: 51px;
+      height: 14px;
+    }
+
+    &__details-value {
+      width: 200px;
+      height: 17px;
+      /*
+Высота и ширина ячейки с адресом
+width: 219px;
+height: 77px;
+*/
+    }
+
+    &__button {
+      width: 230px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+      background-color: $white;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.18;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      width: 261px;
+      height: 39px;
+      color: $text-black;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 1.08;
+    }
+
+    &__details {
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.76;
+    }
+
+    &__details-key {
+      width: 52px;
+      height: 77px;
+    }
+
+    &__details-value {
+      width: 219px;
+      height: 137px;
+    }
+
+    &__button {
+      width: 230px;
+      height: 52px;
+      border: 2px solid $dark-gray;
+      background-color: $white;
+      color: $dark-gray;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.18;
+      text-transform: uppercase;
+    }
+  }
+}
