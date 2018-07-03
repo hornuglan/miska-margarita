@@ -1,5 +1,5 @@
 .color {
-  &__checkbox {
+  &__checkbox-item {
     width: 40px;
     height: 39px;
     border: 2px solid $dark-gray;
@@ -11,8 +11,6 @@
   }
 
   &__label {
-    width: 56px;
-    height: 15px;
     color: $text-black;
     font-size: 17px;
     font-weight: 700;
@@ -24,11 +22,18 @@
   .color {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     width: 768px;
     height: 304px;
-    background-color: gray;
+    background-color: $gray;
 
     &__checkbox {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+
+    &__checkbox-item {
       width: 54px;
       height: 52px;
       border: 2px solid $dark-gray;
@@ -40,8 +45,6 @@
     }
 
     &__label {
-      width: 63px;
-      height: 16px;
       color: $text-black;
       font-size: 19px;
       font-weight: 700;
@@ -57,6 +60,12 @@
     background-color: $gray;
 
     &__checkbox {
+      display: flex;
+      flex-wrap: wrap;
+      width: 30%;
+    }
+
+    &__checkbox-item {
       width: 54px;
       height: 52px;
       border: 2px solid $dark-gray;
@@ -68,8 +77,6 @@
     }
 
     &__label {
-      width: 63px;
-      height: 16px;
       color: $text-black;
       font-size: 19px;
       font-weight: 700;

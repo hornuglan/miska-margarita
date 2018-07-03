@@ -6,92 +6,75 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 1.18;
-    background-color: $mint;
     background-repeat: no-repeat;
 
     &--eco {
-      background-image: url("/source/img/icon-feature-flower.svg");
-      width: 32px;
-      height: 37px;
+      background-image: url("/img/icon-feature-flower.svg");
     }
 
     &--style {
-      background-image: url("/source/img/icon-feature-money.svg");
-      width: 47px;
-      height: 27px;
+      background-image: url("/img/icon-feature-money.svg");
     }
 
     &--like {
-      background-image: url("/source/img/icon-feature-heart.svg");
-      width: 34px;
-      height: 27px;
+      background-image: url("/img/icon-feature-heart.svg");
     }
 
     &--love {
-      background-image: url("/source/img/icon-feature-ball.svg");
-      width: 35px;
-      height: 34px;
+      background-image: url("/img/icon-feature-ball.svg");
     }
 
     &--native {
-      background-image: url("/source/img/icon-feature-rocket.svg");
-      width: 55px;
-      height: 23px;
+      background-image: url("/img/icon-feature-rocket.svg");
     }
 
     &--gift {
-      background-image: url("/source/img/icon-feature-gift.svg");
-      width: 33px;
-      height: 32px;
+      background-image: url("/img/icon-feature-gift.svg");
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .features-list {
-    &__item {
+    &__advantages {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      max-width: 50%;
       color: $text-black;
       font-size: 20px;
       font-weight: 700;
       line-height: 1.1;
-      background-color: $mint;
 
       &--eco {
-        width: 205px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-flower.svg");
+        background-image: url("/img/icon-feature-flower.svg");
       }
 
       &--style {
-        width: 235px;
-        height: 43px;
-        background-image: url("/source/img/icon-feature-money.svg");
+        background-image: url("/img/icon-feature-money.svg");
+        order: 2;
       }
 
       &--like {
-        width: 212px;
-        height: 43px;
-        background-image: url("/source/img/icon-feature-heart.svg");
+        background-image: url("/img/icon-feature-heart.svg");
+        order: 4;
       }
 
       &--love {
-        width: 248px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-ball.svg");
+        background-image: url("/img/icon-feature-ball.svg");
+        order: 1;
       }
 
       &--native {
-        width: 295px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-rocket.svg");
+        background-image: url("/img/icon-feature-rocket.svg");
+        order: 3;
       }
 
       &--gift {
-        width: 233px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-gift.svg");
+        background-image: url("/img/icon-feature-gift.svg");
+        order: 5;
       }
     }
   }
@@ -99,6 +82,11 @@
 
 @media (min-width: $desktop-width) {
   .features-list {
+    &__advantages {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
     &__item {
       display: flex;
       flex-direction: column;
@@ -106,43 +94,30 @@
       font-size: 20px;
       font-weight: 700;
       line-height: 1.1;
-      background-color: $mint;
       background-repeat: no-repeat;
 
       &--eco {
-        width: 205px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-flower.svg");
+        background-image: url("/img/icon-feature-flower.svg");
       }
 
       &--style {
-        width: 235px;
-        height: 43px;
-        background-image: url("/source/img/icon-feature-money.svg");
+        background-image: url("/img/icon-feature-money.svg");
       }
 
       &--like {
-        width: 212px;
-        height: 43px;
-        background-image: url("/source/img/icon-feature-heart.svg");
+        background-image: url("/img/icon-feature-heart.svg");
       }
 
       &--love {
-        width: 248px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-ball.svg");
+        background-image: url("/img/icon-feature-ball.svg");
       }
 
       &--native {
-        width: 295px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-rocket.svg");
+        background-image: url("/img/icon-feature-rocket.svg");
       }
 
       &--gift {
-        width: 233px;
-        height: 42px;
-        background-image: url("/source/img/icon-feature-gift.svg");
+        background-image: url("/img/icon-feature-gift.svg");
       }
     }
   }

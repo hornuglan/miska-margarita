@@ -1,28 +1,34 @@
 .contacts {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   &__title {
-    width: 91px;
-    height: 14px;
     color: $text-black;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.67;
   }
 
+  &__all {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
   &__details {
+    display: flex;
+    align-items: flex-start;
     color: $dark-gray;
     font-size: 15px;
     font-weight: 400;
     line-height: 2;
   }
 
-  &__details-key {
-    width: 46px;
-    height: 76px;
-  }
-
-  &__details-value {
-    width: 178px;
-    height: 166px;
+  &__map {
+    position: relative;
+    align-self: stretch;
   }
 
   &__button {
@@ -40,50 +46,46 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
     &__title {
-      width: 214px;
-      height: 32px;
-      color: $text-black;
+      position: relative;
+      align-self: center;
       font-size: 43px;
-      font-weight: 700;
       line-height: 1.16;
     }
 
-    &__details {
-      color: $dark-gray;
+    &__all {
+      display: flex;
+      justify-content: space-between;
       font-size: 17px;
+    }
+
+    &__details {
+      width: 335px;
+      color: $dark-gray;
+      font-size: 15px;
       font-weight: 400;
-      line-height: 1.76;
+      line-height: 2;
     }
 
-    &__details-key {
-      width: 51px;
-      height: 14px;
-    }
-
-    &__details-value {
-      width: 200px;
-      height: 17px;
-      /*
-Высота и ширина ячейки с адресом
-width: 219px;
-height: 77px;
-*/
+    &__map {
+      width: 100%;
     }
 
     &__button {
-      width: 230px;
+      width: 260px;
       height: 52px;
       border: 2px solid $dark-gray;
       background-color: $white;
       color: $dark-gray;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 700;
-      line-height: 1.18;
+      line-height: 1.11;
       text-transform: uppercase;
     }
   }
@@ -92,43 +94,61 @@ height: 77px;
 @media (min-width: $desktop-width) {
   .contacts {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
 
     &__title {
-      width: 261px;
-      height: 39px;
       color: $text-black;
       font-size: 53px;
       font-weight: 700;
       line-height: 1.08;
+      margin-bottom: 10px;
+    }
+
+    &__all {
+      flex-direction: column;
+      justify-content: flex-start;
+      font-size: 15px;
+      line-height: 1.76;
     }
 
     &__details {
       color: $dark-gray;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: 400;
-      line-height: 1.76;
+      line-height: 2;
     }
 
-    &__details-key {
-      width: 52px;
-      height: 77px;
-    }
-
-    &__details-value {
-      width: 219px;
-      height: 137px;
+    &__map {
+      flex-basis: 50%;
+      position: relative;
+      min-height: 457px;
+      width: 100%;
     }
 
     &__button {
-      width: 230px;
+      flex: none;
+      width: 348px;
+
+      margin-top: auto;
       height: 52px;
       border: 2px solid $dark-gray;
       background-color: $white;
       color: $dark-gray;
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 700;
-      line-height: 1.18;
+      line-height: 1.11;
       text-transform: uppercase;
     }
   }

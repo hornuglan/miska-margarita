@@ -1,7 +1,5 @@
 .features {
   &__title {
-    width: 185px;
-    height: 24px;
     color: $text-black;
     font-size: 25px;
     font-weight: 700;
@@ -11,9 +9,12 @@
 
 @media (min-width: $tablet-width) {
   .features {
+    box-sizing: border-box;
+    max-width: 678px;
+    margin-left: auto;
+    margin-right: auto;
+
     &__title {
-      width: 316px;
-      height: 42px;
       color: $text-black;
       font-size: 43px;
       font-weight: 700;
@@ -25,8 +26,6 @@
 @media (min-width: $desktop-width) {
   .features {
     &__title {
-      width: 387px;
-      height: 51px;
       color: $text-black;
       font-size: 53px;
       font-weight: 700;

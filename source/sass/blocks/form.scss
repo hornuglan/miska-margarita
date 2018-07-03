@@ -2,8 +2,6 @@
   background-color: $white;
 
   &__intro {
-    width: 242px;
-    height: 85px;
     color: $dark-gray;
     font-size: 13px;
     font-weight: 400;
@@ -11,8 +9,6 @@
   }
 
   &__legend {
-    width: 36px;
-    height: 12px;
     color: $mint;
     font-size: 17px;
     font-weight: 700;
@@ -21,8 +17,6 @@
   }
 
   &__radio-button {
-    width: 40px;
-    height: 40px;
     border: 2px solid $dark-gray;
     background-color: $white;
   }
@@ -35,8 +29,6 @@
   }
 
   &__personal-label {
-    width: 41px;
-    height: 14px;
     color: $text-black;
     font-size: 17px;
     font-weight: 700;
@@ -44,8 +36,6 @@
   }
 
   &__personal-name {
-    width: 260px;
-    height: 52px;
     box-shadow: inset 0 -2px 0 $text-black;
 
     &::placeholder {
@@ -58,13 +48,9 @@
   }
 
   &__input-tel {
-    width: 260px;
-    height: 52px;
     box-shadow: inset 0 -2px 0 $text-black;
 
     &::placeholder {
-      width: 110px;
-      height: 13px;
       opacity: 0.3;
       color: $dark-gray;
       font-size: 17px;
@@ -74,13 +60,9 @@
   }
 
   &__input-email {
-    width: 260px;
-    height: 52px;
     box-shadow: inset 0 -2px 0 $text-black;
 
     &::placeholder {
-      width: 91px;
-      height: 14px;
       opacity: 0.3;
       color: $dark-gray;
       font-size: 17px;
@@ -90,15 +72,11 @@
   }
 
   &__additional-textarea {
-    width: 260px;
-    height: 142px;
     box-shadow: inset 0 -2px 0 $text-black;
     border: 2px solid $dark-gray;
     background-color: $white;
 
     &::placeholder {
-      width: 163px;
-      height: 35px;
       opacity: 0.3;
       color: $dark-gray;
       font-size: 17px;
@@ -108,8 +86,6 @@
   }
 
   &__text-note {
-    width: 247px;
-    height: 14px;
     color: $dark-gray;
     font-size: 14px;
     font-weight: 400;
@@ -131,8 +107,6 @@
 @media (min-width: $tablet-width) {
   .form {
     &__intro {
-      width: 612px;
-      height: 47px;
       color: $dark-gray;
       font-size: 17px;
       font-weight: 400;
@@ -140,8 +114,6 @@
     }
 
     &__legend {
-      width: 36px;
-      height: 12px;
       color: $mint;
       font-size: 17px;
       font-weight: 700;
@@ -150,14 +122,11 @@
     }
 
     &__radio-button {
-      width: 54px;
-      height: 55px;
       border: 2px solid $dark-gray;
       background-color: $white;
     }
 
     &__radio-label {
-      height: 19px;
       color: $text-black;
       font-size: 19px;
       font-weight: 700;
@@ -166,12 +135,18 @@
 
     &__personal {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
+      align-items: flex-start;
       justify-content: space-between;
     }
 
+    &__personal-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
     &__personal-label {
-      height: 15px;
+      position: relative;
       color: $text-black;
       font-size: 19px;
       font-weight: 700;
@@ -179,7 +154,6 @@
     }
 
     &__personal-name {
-      height: 52px;
       box-shadow: inset 0 -2px 0 $text-black;
 
       &::placeholder {
@@ -201,13 +175,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 501px;
-      height: 52px;
       box-shadow: inset 0 -2px 0 $text-black;
 
       &::placeholder {
-        width: 123px;
-        height: 15px;
         opacity: 0.3;
         color: $dark-gray;
         font-size: 19px;
@@ -220,13 +190,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 501px;
-      height: 52px;
       box-shadow: inset 0 -2px 0 $text-black;
 
       &::placeholder {
-        width: 101px;
-        height: 16px;
         opacity: 0.3;
         color: $dark-gray;
         font-size: 19px;
@@ -239,15 +205,11 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 501px;
-      height: 142px;
       box-shadow: inset 0 -2px 0 $text-black;
       border: 2px solid $dark-gray;
       background-color: $white;
 
       &::placeholder {
-        width: 365px;
-        height: 19px;
         opacity: 0.3;
         color: $dark-gray;
         font-size: 19px;
@@ -257,8 +219,6 @@
     }
 
     &__text-note {
-      width: 299px;
-      height: 17px;
       color: $dark-gray;
       font-size: 17px;
       font-weight: 400;
@@ -282,8 +242,6 @@
 @media (min-width: $desktop-width) {
   .form {
     &__intro {
-      width: 672px;
-      height: 47px;
       color: $dark-gray;
       font-size: 17px;
       font-weight: 400;
@@ -291,8 +249,6 @@
     }
 
     &__legend {
-      width: 35px;
-      height: 12px;
       color: $mint;
       font-size: 17px;
       font-weight: 700;
@@ -300,15 +256,17 @@
       text-transform: uppercase;
     }
 
+    &__personal-wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+
     &__radio-button {
-      width: 54px;
-      height: 55px;
       border: 2px solid $dark-gray;
       background-color: $white;
     }
 
     &__radio-label {
-      height: 19px;
       color: $text-black;
       font-size: 19px;
       font-weight: 700;
@@ -316,7 +274,6 @@
     }
 
     &__personal-label {
-      height: 15px;
       color: $text-black;
       font-size: 19px;
       font-weight: 700;
@@ -324,7 +281,7 @@
     }
 
     &__personal-name {
-      height: 52px;
+      position: relative;
       box-shadow: inset 0 -2px 0 $text-black;
 
       &::placeholder {
@@ -346,13 +303,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 700px;
-      height: 52px;
       box-shadow: inset 0 -2px 0 $text-black;
 
       &::placeholder {
-        width: 123px;
-        height: 15px;
         opacity: 0.3;
         color: $dark-gray;
         font-size: 19px;
@@ -365,13 +318,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 700px;
-      height: 52px;
       box-shadow: inset 0 -2px 0 $text-black;
 
       &::placeholder {
-        width: 101px;
-        height: 16px;
         opacity: 0.3;
         color: $dark-gray;
         font-size: 19px;
@@ -384,15 +333,11 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      width: 700px;
-      height: 142px;
       box-shadow: inset 0 -2px 0 $text-black;
       border: 2px solid $dark-gray;
       background-color: $white;
 
       &::placeholder {
-        width: 365px;
-        height: 19px;
         opacity: 0.3;
         color: $dark-gray;
         font-size: 19px;
@@ -402,8 +347,6 @@
     }
 
     &__text-note {
-      width: 300px;
-      height: 17px;
       color: $dark-gray;
       font-size: 17px;
       font-weight: 400;
