@@ -1,14 +1,63 @@
 .main-menu {
-  background-color: $white;
-
   &__button-icon {
     width: 20px;
     height: 14px;
   }
 
-  &__list-item {
-    width: 320px;
-    height: 79px;
-    box-shadow: 0 1px 0 $light-gray, inset 0 1px 0 $light-gray;
+  &__list {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .category-list {
+    display: flex;
+    flex-direction: row;
+    color: $text-black;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  .user-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: $text-black;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.41;
+  }
+
+  .desktop-list {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category-list {
+    color: $text-black;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.41;
+  }
+
+  .user-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: $text-black;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.41;
+  }
+
+  .desktop-list {
+    display: flex;
+    height: 15px;
+    color: $text-black;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
   }
 }

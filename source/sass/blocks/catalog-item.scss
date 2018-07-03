@@ -2,21 +2,17 @@
 
   background-color: $white;
 
-  &__img {
-    width: 260px;
-    height: 195px;
+  &__title {
+    display: flex;
+    flex-direction: column;
   }
 
   &__features {
-    width: 260px;
-    height: 179px;
     border: 1px solid $light-gray;
     background-color: $white;
   }
 
   &__title-name {
-    width: 197px;
-    height: 18px;
     color: $text-black;
     font-size: 17px;
     font-weight: 700;
@@ -24,8 +20,6 @@
   }
 
   &__title-description {
-    width: 127px;
-    height: 12px;
     color: $dark-gray;
     font-size: 13px;
     font-weight: 400;
@@ -33,8 +27,6 @@
   }
 
   &__price-rub {
-    width: 74px;
-    height: 16px;
     color: $text-black;
     font-size: 15px;
     font-weight: 700;
@@ -42,8 +34,100 @@
   }
 
   &__price-icon {
-    width: 20px;
-    height: 19px;
     opacity: 0.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    flex-direction: row;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__features {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      border: 1px solid $light-gray;
+      background-color: $white;
+    }
+
+    &__title-name {
+      color: $text-black;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__title-description {
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+    }
+
+    &__price-rub {
+      height: 17px;
+      color: $text-black;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.41;
+    }
+
+    &__price-icon {
+      opacity: 0.2;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__features {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+      flex-wrap: wrap;
+      min-height: 197px;
+      border: 1px solid $light-gray;
+      background-color: $white;
+    }
+
+    &__title-name {
+      color: $text-black;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    &__title-description {
+      color: $dark-gray;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 2;
+    }
+
+    &__price-rub {
+      height: 17px;
+      color: $text-black;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.41;
+    }
+
+    &__price-icon {
+      opacity: 0.2;
+    }
   }
 }

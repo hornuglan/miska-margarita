@@ -8,3 +8,35 @@
   line-height: 0.94;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .order-button {
+    display: flex;
+    justify-content: center;
+    width: 584px;
+    height: 52px;
+    border: 2px solid $dark-gray;
+    background-color: $white;
+    color: $dark-gray;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 0.94;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-button {
+    display: flex;
+    justify-content: flex-end;
+    width: 230px;
+    height: 52px;
+    border: 2px solid $dark-gray;
+    background-color: $white;
+    color: $dark-gray;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 0.94;
+    text-transform: uppercase;
+  }
+}

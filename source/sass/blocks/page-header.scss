@@ -3,3 +3,19 @@
   width: 320px;
   height: 395px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    width: 1250px;
+  }
+}

@@ -22,26 +22,33 @@
 
       <button class="main-menu__button-icon" type="button"></button>
 
-      <ul class="main-menu__list">
-        <li>
-          <a class="main-menu__list-item" href="#">Каталог товаров</a>
+      <ul class="main-menu__list category-list">
+        <li class="category-list__item">
+          <a class="category-list__link">Каталог товаров</a>
         </li>
-        <li>
-          <a class="main-menu__list-item" href="#">Вязание на&nbsp;заказ</a>
-        </li>
-        <li>
-          <a class="main-menu__list-item" href="#">Поиск</a>
-        </li>
-        <li>
-          <a class="main-menu__list-item" href="#">Корзина</a>
-        </li>
-        <li>
-          <a class="main-menu__list-item" href="#">Новые поступления</a>
-        </li>
-        <li>
-          <a class="main-menu__list-item" href="#">Распродажа</a>
+        <li class="category-list__item">
+          <a class="category-list__link">Вязание на заказ</a>
         </li>
       </ul>
+
+      <ul class="main-menu__list user-list">
+        <li class="user-list__item">
+          <a class="user-list__link">Поиск</a>
+        </li>
+        <li class="user-list__item">
+          <a class="user-list__link">Корзина: пока пуста</a>
+        </li>
+      </ul>
+
+      <ul class="main-menu__list desktop-list">
+        <li class="desktop-list__item">
+          <a class="desktop-list__link">Новые поступления</a>
+        </li>
+        <li class="desktop-list__item">
+          <a class="desktop-list__link">Распродажа</a>
+        </li>
+      </ul>
+
     </nav>
 
   </header>
@@ -71,64 +78,66 @@
       <fieldset class="form__color color">
         <legend class="form__legend form__color-title">Цвет</legend>
         <div class="color__checkbox">
-          <input class="color__checkbox" name="color[]" id="color-1" value="color-1" type="checkbox" checked>
+          <input class="color__checkbox-item" name="color[]" id="color-1" value="color-1" type="checkbox" checked>
           <label class="color__label color__label-checkbox" for="color-1">Белый</label>
         </div>
         <div class="color__checkbox">
-          <input class="color__checkbox" name="color[]" id="color-2" value="color-2" type="checkbox" checked>
+          <input class="color__checkbox-item" name="color[]" id="color-2" value="color-2" type="checkbox" checked>
           <label class="color__label color__label-checkbox" for="color-2">Серый</label>
         </div>
         <div class="color__checkbox">
-          <input class="color__checkbox" name="color[]" id="color-3" value="color-3" type="checkbox">
+          <input class="color__checkbox-item" name="color[]" id="color-3" value="color-3" type="checkbox">
           <label class="color__label color__label-checkbox" for="color-3">&laquo;Тиффани&raquo;</label>
         </div>
         <div class="color__checkbox">
-          <input class="color__checkbox" name="color[]" id="color-4" value="color-4" type="checkbox">
+          <input class="color__checkbox-item" name="color[]" id="color-4" value="color-4" type="checkbox">
           <label class="color__label color__label-checkbox" for="color-4">Черный</label>
         </div>
         <div class="color__checkbox">
-          <input class="color__checkbox" name="color[]" id="color-5" value="color-5" type="checkbox">
+          <input class="color__checkbox-item" name="color[]" id="color-5" value="color-5" type="checkbox">
           <label class="color__label color__label-checkbox" for="color-5">Розовый</label>
         </div>
         <div class="color__checkbox">
-          <input class="color__checkbox" name="color[]" id="color-6" value="color-6" type="checkbox">
+          <input class="color__checkbox-item" name="color[]" id="color-6" value="color-6" type="checkbox">
           <label class="color__label color__label-checkbox" for="color-6">Оранжевый</label>
         </div>
       </fieldset>
 
       <fieldset class="form__personal">
         <legend class="form__legend personal__title">ФИО</legend>
-        <div class="form__personal form__personal-name">
-          <input class="form__personal-name" name="name" id="name" type="text" placeholder="Введите Ваше имя*" required>
+        <div class="form__personal form__personal-wrapper">
           <label class="form__personal-label" for="name">Имя:</label>
+          <input class="form__personal-name" name="name" id="name" type="text" placeholder="Введите Ваше имя*" required>
         </div>
-        <div class="form__personal form__personal-surname">
-          <input class="form__personal-name" name="surname" id="surname" type="text" placeholder="Укажите фамилию*" required>
+        <div class="form__personal form__personal-wrapper">
           <label class="form__personal-label" for="surname">Фамилия:</label>
+          <input class="form__personal-name" name="surname" id="surname" type="text" placeholder="Укажите фамилию*" required>
         </div>
-        <div class="form__personal form__personal-middle-name">
-          <input class="form__personal-name" name="middle-name" id="middle-name" type="text" placeholder="Отчество, если желаете">
+        <div class="form__personal form__personal-wrapper">
           <label class="form__personal-label" for="middle-name">Отчество:</label>
+          <input class="form__personal-name" name="middle-name" id="middle-name" type="text" placeholder="Отчество, если желаете">
         </div>
       </fieldset>
 
-      <fieldset class="form__tel">
-        <legend class="form__legend">
-          <label>Тел</label>
-        </legend>
-        <div class="form__tel-field">
-          <input class="form__tel form__input-tel" name="tel" id="tel" type="tel" placeholder="+7 XXX XX XX*" required>
-        </div>
-      </fieldset>
+      <div class="form__contact-wrapper">
+        <fieldset class="form__tel">
+          <legend class="form__legend">
+            <label>Тел</label>
+          </legend>
+          <div class="form__tel-field">
+            <input class="form__tel form__input-tel" name="tel" id="tel" type="tel" placeholder="+7 XXX XX XX*" required>
+          </div>
+        </fieldset>
 
-      <fieldset class="form__email">
-        <legend class="form__legend">
-          <label>E-mail</label>
-        </legend>
-        <div class="form__email-field">
-          <input class="form__email form__input-email" name="email" id="email" type="email" placeholder="Ваш Email*" required>
-        </div>
-      </fieldset>
+        <fieldset class="form__email">
+          <legend class="form__legend">
+            <label>E-mail</label>
+          </legend>
+          <div class="form__email-field">
+            <input class="form__email form__input-email" name="email" id="email" type="email" placeholder="Ваш Email*" required>
+          </div>
+        </fieldset>
+      </div>
 
       <fieldset class="form__additional">
         <legend class="form__legend">
@@ -163,6 +172,9 @@
       </ul>
 
       <div class="page-footer__copyright copyright">
+        <a class="copyright__logo" href="#">
+          <img src="/img/logo-mobile.svg" alt="Mishka">
+        </a>
         <b class="copyright__text">Разработано:</b>
         <a class="button copyright__link" href="#">
           <img src="http://placehold.it/150x100" class="copyright__logo" alt="logo">

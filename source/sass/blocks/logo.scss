@@ -4,3 +4,27 @@
     height: 35px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+
+    &__image {
+      width: 113px;
+      height: 46px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+
+    &__image {
+      width: 149px;
+      height: 72px;
+    }
+  }
+}

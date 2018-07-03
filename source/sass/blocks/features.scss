@@ -1,10 +1,35 @@
 .features {
   &__title {
-    width: 185px;
-    height: 24px;
     color: $text-black;
     font-size: 25px;
     font-weight: 700;
     line-height: 1.2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    box-sizing: border-box;
+    max-width: 678px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+      color: $text-black;
+      font-size: 43px;
+      font-weight: 700;
+      line-height: 1.16;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    &__title {
+      color: $text-black;
+      font-size: 53px;
+      font-weight: 700;
+      line-height: 1.08;
+    }
   }
 }

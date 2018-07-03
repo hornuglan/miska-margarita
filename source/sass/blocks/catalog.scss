@@ -1,3 +1,18 @@
 .catalog {
   background-color: $white;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    background-color: $white;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: $white;
+  }
+}
