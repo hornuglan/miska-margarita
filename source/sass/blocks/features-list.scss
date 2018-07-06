@@ -1,38 +1,91 @@
 .features-list {
   background-color: $white;
+  padding-left: 29px;
+
+  &__advantages {
+    @include list;
+  }
 
   &__item {
     color: $text-black;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.18;
+    margin: 0;
     background-repeat: no-repeat;
+    position: relative;
+    padding-top: 30px;
 
-    &--eco {
-      background-image: url("/img/icon-feature-flower.svg");
+    &--eco::after {
+      background: url("/img/icon-feature-flower.svg");
+      position: absolute;
+      content: "";
+      top: 2px;
+      left: 9px;
+      width: 32px;
+      height: 37px;
     }
 
-    &--style {
+    &--style::after {
       background-image: url("/img/icon-feature-money.svg");
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 47px;
+      height: 27px;
     }
 
     &--like {
-      background-image: url("/img/icon-feature-heart.svg");
+      &::after {
+        background-image: url("/img/icon-feature-heart.svg");
+        position: absolute;
+        content: "";
+        top: 12px;
+        left: 6px;
+        width: 34px;
+        height: 27px;
+      }
     }
 
     &--love {
-      background-image: url("/img/icon-feature-ball.svg");
+      &::after {
+        background-image: url("/img/icon-feature-ball.svg");
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 2px;
+        width: 35px;
+        height: 34px;
+      }
     }
 
     &--native {
-      background-image: url("/img/icon-feature-rocket.svg");
+      &::after {
+        background-image: url("/img/icon-feature-rocket.svg");
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: -5px;
+        width: 55px;
+        height: 23px;
+      }
     }
 
     &--gift {
-      background-image: url("/img/icon-feature-gift.svg");
+      &::after {
+        background-image: url("/img/icon-feature-gift.svg");
+        position: absolute;
+        content: "";
+        top: 10px;
+        left: 3px;
+        width: 33px;
+        height: 32px;
+      }
     }
   }
 }
+
 
 @media (min-width: $tablet-width) {
   .features-list {

@@ -1,64 +1,120 @@
+$bg-mint: #149080;
+
 .category {
+  margin: auto;
+  padding: 0;
+  max-width: 320px;
+  background-color: $mint;
+
+  &__list {
+    @include list;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__item {
+    text-decoration: none;
+    color: $white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  &__item-link {
+    font-size: 19px;
+    line-height: 24px;
+    color: $white;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    font-weight: 700;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 29px;
+    padding-left: 30px;
+
+    &--interior::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      width: 40px;
+      height: 62px;
+      background-image: url("/img/icon-interior.svg");
+      background-repeat: no-repeat;
+      opacity: 0.5;
+    }
+
+    &--toy::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      background-image: url("/img/icon-toy.svg");
+      background-repeat: no-repeat;
+      top: 21px;
+      right: 27px;
+      opacity: 0.5;
+    }
+  }
+
+  &__item-text {
+    width: 175px;
     color: $white;
     font-size: 19px;
     font-weight: 700;
     line-height: 1.26;
-
-    &--interior {
-      background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
-    }
-
-    &--toys {
-      background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
-    }
+    text-decoration: none;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .category {
-    display: flex;
-    flex-direction: row;
 
-    &__item {
-      color: $white;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.5;
+// @media (min-width: $tablet-width) {
+//   .category {
+//     display: flex;
+//     flex-direction: row;
 
-      &--interior {
-        background-color: $mint;
-        background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
-      }
+//     &__item {
+//       color: $white;
+//       font-size: 20px;
+//       font-weight: 700;
+//       line-height: 1.5;
 
-      &--toys {
-        background-color: $dark-mint;
-        background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
-      }
-    }
-  }
-}
+//       &--interior {
+//         background-color: $mint;
+//         background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
+//       }
 
-@media (min-width: $desktop-width) {
-  .category {
-    display: flex;
-    flex-direction: row;
+//       &--toys {
+//         background-color: $dark-mint;
+//         background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
+//       }
+//     }
+//   }
+// }
 
-    &__item {
-      color: $white;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.5;
+// @media (min-width: $desktop-width) {
+//   .category {
+//     display: flex;
+//     flex-direction: row;
 
-      &--interior {
-        background-color: $mint;
-        background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
-      }
+//     &__item {
+//       color: $white;
+//       font-size: 20px;
+//       font-weight: 700;
+//       line-height: 1.5;
 
-      &--toys {
-        background-color: $dark-mint;
-        background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
-      }
-    }
-  }
-}
+//       &--interior {
+//         background-color: $mint;
+//         background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
+//       }
+
+//       &--toys {
+//         background-color: $dark-mint;
+//         background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
+//       }
+//     }
+//   }
+// }

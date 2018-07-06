@@ -1,0 +1,14 @@
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border: 2px solid $dark-gray;
+  background-color: $white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.18;
+  height: 52px;
+}

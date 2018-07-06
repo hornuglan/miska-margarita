@@ -1,12 +1,21 @@
 .order-button {
-  width: 192px;
-  height: 52px;
-  border: 2px solid $dark-gray;
   background-color: $white;
   font-size: 17px;
   font-weight: 700;
   line-height: 0.94;
   text-transform: uppercase;
+  align-self: center;
+  margin-bottom: 31px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  color: $text-black;
+  cursor: pointer;
+  width: 192px;
 }
 
 @media (min-width: $tablet-width) {

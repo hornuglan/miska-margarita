@@ -1,4 +1,12 @@
 .copyright {
+  display: flex;
+  width: 260px;
+  min-height: 79px;
+  border-top: 1px solid $light-gray;
+  margin-top: 23px;
+  justify-content: space-between;
+  align-items: center;
+
   &__logo {
     display: none;
   }
@@ -8,10 +16,16 @@
     font-size: 19px;
     font-weight: 700;
     line-height: 0.95;
+    margin: 0;
+    padding: 0;
+    margin-left: 37px;
+    margin-top: 0;
+    padding-bottom: 3px;
   }
 
-  &__link {
-    background-color: $mint;
+  &__link-logo {
+    margin-right: 39px;
+    margin-top: 3px;
   }
 }
 

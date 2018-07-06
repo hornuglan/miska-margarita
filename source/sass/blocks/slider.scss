@@ -2,31 +2,33 @@
   background-color: $white;
 
   &__item {
+    margin-left: auto;
+
     &--prev {
       display: none;
     }
   }
 
   &__navigation {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    display: flex;
+    margin-bottom: 30px;
+  }
 
-    &__arrow {
-      width: 260px;
-      height: 52px;
-      border: 1px solid $light-gray;
-      background-color: $white;
+  &__arrow {
+    border: 1px solid $light-gray;
+    padding: 0;
+    padding-right: 14px;
+    padding-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 50%;
+    background-color: transparent;
 
-      &--previous {
-        width: 50px;
-        height: 26px;
-      }
-
-      &--next {
-        width: 50px;
-        height: 26px;
-      }
+    &--next {
+      border-left: none;
     }
   }
 }

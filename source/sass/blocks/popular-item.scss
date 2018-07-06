@@ -1,35 +1,48 @@
 .popular-item {
   background-color: $white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 41px;
+  position: relative;
 
   &__type {
-    width: 246px;
-    height: 24px;
     color: $text-black;
     font-size: 25px;
     font-weight: 700;
     line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+    margin-bottom: 5px;
   }
 
   &__title {
-    width: 133px;
-    height: 16px;
     color: $mint;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.18;
     text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
   }
 
   &__text {
-    width: 249px;
-    height: 63px;
     color: $dark-gray;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
+    margin-top: 5px;
+    margin-bottom: 16px;
   }
 
   &__table {
+    width: 260px;
+    border-collapse: collapse;
     color: $dark-gray;
     font-size: 15px;
     font-weight: 400;
@@ -37,37 +50,34 @@
   }
 
   &__table-key {
-    width: 67px;
-    height: 92px;
+    width: 98px;
+    border-bottom: 1px solid $light-gray;
   }
 
   &__table-value {
-    width: 129px;
-    height: 93px;
+    width: 43px;
+    height: 31px;
+    border-bottom: 1px solid $light-gray;
   }
 
   &__image {
     width: 260px;
     height: 315px;
-    margin-bottom: 16px;
+    margin-top: 28px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
   }
 
   &__price {
-    display: flex;
-    justify-content: center;
-    width: 124px;
-    height: 17px;
+    align-self: center;
+    margin-top: 19px;
     color: $dark-gray;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.41;
-  }
-
-  &__button {
-    width: 259px;
-    height: 52px;
-    border: 2px solid $dark-gray;
-    background-color: $white;
   }
 }
 

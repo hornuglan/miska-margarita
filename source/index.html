@@ -10,7 +10,9 @@
 
 <body>
 
+
   <header class="page-header">
+      <div class="page-header__container">
 
     <div class="logo">
       <a class="logo__image">
@@ -20,11 +22,12 @@
 
     <nav class="main-menu">
 
-      <button class="main-menu__button-icon" type="button"></button>
+      <button class="button main-menu__button-icon" type="button" aria-label="Открыть главное меню"></button>
+
 
       <ul class="main-menu__list category-list">
         <li class="category-list__item">
-          <a class="category-list__link">Каталог товаров</a>
+          <a class="category-list__link" href="/catalog.html">Каталог товаров</a>
         </li>
         <li class="category-list__item">
           <a class="category-list__link">Вязание на заказ</a>
@@ -50,19 +53,35 @@
       </ul>
 
     </nav>
+  </div>
   </header>
 
+
   <main class="page-main">
-    <div class="page-main__header">
-      <h1 class="page-main__header-title page-main__header-title--main">Милые штуки ручной работы для дома</h1>
+    <div class="page-main-container">
+    <div class="page-main__header page-main__header--index">
+      <h1 class="page-main__header-title page-main__header-title--main">Милые штуки<br> ручной<br> работы для дома</h1>
+    </div>
     </div>
 
+
     <div class="category">
-      <a class="category__item category__item--interior" href="#">Предметы интерьера</a>
-      <a class="category__item category__item--toys" href="#">Детские игрушки</a>
+    <ul class="category__list">
+      <li class="category__item">
+      <a class="category__item-link category__item-link--interior" href="#">
+        <span class="category__item-text">Предметы интерьера</span>
+      </a>
+      </li>
+      <li class="category__item">
+      <a class="category__item-link category__item-link--toy" href="#">
+        <span class="category__item-text">Детские игрушки</span>
+      </a>
+      </li>
+    </ul>
     </div>
 
     <section class="popular-item">
+      <div class="popular-item__container">
       <header class="popular-item__header">
         <h2 class="popular-item__type">Вязаные корзинки</h2>
         <span class="popular-item__title">Товар недели</span>
@@ -91,33 +110,49 @@
             </table>
           </div>
           <div class="popular-item__image">
-            <img src="img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка">
+            <img src="/img/triple-set-mobile@1x.jpg" alt="Вязаная корзинка">
           </div>
         </article>
       </div>
       <footer class="popular-item__footer">
         <span class="popular-item__price">Цена: 990&nbsp;руб.</span>
-        <a href="#" class="popular-item__button">Заказать</a>
+        <a href="#" class="popular-item__button button">Заказать</a>
       </footer>
+      </div>
 
     </section>
 
     <section class="features">
+      <div class="features__container">
       <h2 class="features__title">Коротко о&nbsp;нас:</h2>
       <div class="features-list">
         <ul class="features-list__advantages">
-          <li class="features-list__item features-list__item--eco">Экологически чистые материалы</li>
-          <li class="features-list__item features-list__item--style">Скандинавский стиль по&nbsp;российской цене</li>
-          <li class="features-list__item features-list__item--like">Увеличивает лайки на&nbsp;фотографиях</li>
-          <li class="features-list__item features-list__item--love">Связано вручную с&nbsp;любовью и&nbsp;умилением</li>
-          <li class="features-list__item features-list__item--native">Поддержка отечественного производителя</li>
-          <li class="features-list__item features-list__item--gift">Поставляется в&nbsp;подарочной упаковке</li>
+          <li class="features-list__item features-list__item--eco">
+            <p class="features-list__text features-list__text--eco">Экологически чистые материалы</p>
+          </li>
+          <li class="features-list__item features-list__item--style">
+            <p class="features-list__text features-list__text--style">Скандинавский стиль по&nbsp;российской цене</p>
+          </li>
+          <li class="features-list__item features-list__item--like">
+            <p class="features-list__text features-list__text--like">Увеличивает лайки на&nbsp;фотографиях</p>
+          </li>
+          <li class="features-list__item features-list__item--love">
+            <p class="features-list__text features-list__text--love">Связано вручную с&nbsp;любовью и&nbsp;умилением</p>
+          </li>
+          <li class="features-list__item features-list__item--native">
+            <p class="features-list__text features-list__text--native">Поддержка отечественного производителя</p>
+          </li>
+          <li class="features-list__item features-list__item--gift">
+            <p class="features-list__text features-list__text--gift">Поставляется в&nbsp;подарочной упаковке</p>
+          </li>
         </ul>
+      </div>
       </div>
 
     </section>
 
     <section class="reviews  slider">
+      <div class="reviews__container">
       <h2 class="reviews__title">Отзывы</h2>
       <article class="reviews__items-wrapper  slider__items-wrapper">
         <blockquote class="reviews__item  slider__item  review slider__item--prev">
@@ -144,10 +179,15 @@
         </blockquote>
       </article>
       <div class="slider__navigation">
-        <button type="button" class="slider__arrow slider__arrow--previous" title="Prev review" aria-label="Предыдущий отзыв">Предыдущий отзыв</button>
-        <button type="button" class="slider__arrow slider__arrow--next" title="Next review" aria-label="Следующий отзыв">Следующий отзыв</button>
+        <button type="button" class="slider__arrow slider__arrow--previous" title="Prev review" aria-label="Предыдущий отзыв">
+          <img src="/img/icon-left-arrow.svg" class="slider__arrow-img" alt="Предыдущий отзыв">
+        </button>
+        <button type="button" class="slider__arrow slider__arrow--next" title="Next review" aria-label="Следующий отзыв">
+          <img src="/img/icon-right-arrow.svg" class="slider__arrow-img" alt="Следующий отзыв">
+        </button>
       </div>
-      <a class="reviews__create">Написать</a>
+      <a class="reviews__create button">Написать</a>
+      </div>
     </section>
 
     <section class="contacts">
@@ -159,7 +199,7 @@
               <tbody class="contacts__details-wrapper">
                 <tr>
                   <td class="contacts__details-key">e-mail:</td>
-                  <td class="contacts__details-value">
+                  <td class="contacts__details-value--email">
                     <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
                   </td>
                 </tr>
@@ -174,8 +214,8 @@
         <div class="contacts__map">
           <img src="/img/map-mobile@1x.jpg" alt="Карта">
         </div>
-        <div class="contacts__button">
-          <button type="button" class="contacts__button">Напишите нам</button>
+        <div class="contacts__button-btn">
+          <button type="button" class="contacts__button button">Напишите нам</button>
         </div>
       </div>
     </section>
@@ -200,9 +240,9 @@
         <a class="copyright__logo" href="#">
           <img src="/img/logo-mobile.svg" alt="Mishka">
         </a>
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="#">
-          <img src="/img/logo-htmlacademy.svg" class="copyright__logo" alt="logo">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="#">
+          <img src="/img/logo-htmlacademy.svg" class="copyright__link-logo" alt="logo">
         </a>
       </div>
     </div>

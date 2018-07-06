@@ -1,28 +1,60 @@
 .promo {
   width: 260px;
-  height: 503px;
   border: 1px solid $light-gray;
   background-color: $white;
+  margin-right: auto;
+  margin-bottom: 58px;
+  margin-left: auto;
+  padding-top: 15px;
 
   &__title {
-    width: 126px;
-    height: 41px;
     color: $text-black;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.41;
-    background-image: url("/img/icon-video.svg");
-    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+    min-height: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 90px;
+
+    &::before {
+      background: url("/img/icon-video.svg");
+      background-repeat: no-repeat;
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -55px;
+      width: 32px;
+      height: 32px;
+    }
   }
 
   &__video {
-    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 150px;
+    background-image: url("/img/video-mobile@1x.jpg");
+  }
+
+  &__video-button {
+    width: 101px;
+    height: 77px;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__description {
+    margin: 0;
+    padding: 0;
+    padding-top: 26px;
+    padding-right: 40px;
+    padding-left: 33px;
   }
 
   &__text {
-    width: 183px;
-    height: 109px;
     color: $dark-gray;
     font-size: 13px;
     font-weight: 400;

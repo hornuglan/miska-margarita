@@ -1,11 +1,31 @@
 .form {
   background-color: $white;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-bottom: 55px;
 
-  &__intro {
+  &__wrapper {
+    @include form-wrapper;
+  }
+
+  &__type {
+    border: none;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  &__intro-text {
     color: $dark-gray;
     font-size: 13px;
     font-weight: 400;
     line-height: 1.85;
+    width: 245px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
   }
 
   &__legend {
@@ -14,11 +34,52 @@
     font-weight: 700;
     line-height: 0.94;
     text-transform: uppercase;
+    position: relative;
+    width: 260px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 35px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 7px;
+      width: 198px;
+      height: 1px;
+      background-color: $mint;
+    }
+  }
+
+  &__radio {
+    padding-left: 60px;
+    margin-bottom: 40px;
   }
 
   &__radio-button {
+    display: none;
+  }
+
+  &__radio-button + label::before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     border: 2px solid $dark-gray;
-    background-color: $white;
+    top: -9px;
+    left: -55px;
+    content: "";
+  }
+
+  &__radio-button:checked + label::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: -43px;
+    top: 3px;
+    background-color: $mint;
+    border-radius: 50%;
   }
 
   &__radio-label {
@@ -26,6 +87,20 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 1.06;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__personal {
+    border: none;
+    padding-bottom: 12px;
+  }
+
+  &__personal-wrapper {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &__personal-label {
@@ -33,10 +108,25 @@
     font-size: 17px;
     font-weight: 700;
     line-height: 1.06;
+    position: relative;
+
+    margin-bottom: 16px;
+    padding-left: 0;
+    display: flex;
+    align-items: flex-start;
+    width: 180px;
   }
 
   &__personal-name {
     box-shadow: inset 0 -2px 0 $text-black;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    width: 260px;
+    height: 38px;
+    padding-bottom: 7px;
+    margin-bottom: 22px;
+
 
     &::placeholder {
       opacity: 0.3;
@@ -44,11 +134,28 @@
       font-size: 17px;
       font-weight: 400;
       line-height: 1.06;
+    }
+  }
+
+  &__contact-wrapper {
+    width: 320px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &__tel {
+    border: none;
+
+    &__field {
+      padding-block-end: 25px;
     }
   }
 
   &__input-tel {
     box-shadow: inset 0 -2px 0 $text-black;
+    box-sizing: border-box;
+    padding-right: 40px;
+    padding-bottom: 15px;
 
     &::placeholder {
       opacity: 0.3;
@@ -56,11 +163,22 @@
       font-size: 17px;
       font-weight: 400;
       line-height: 1.06;
+    }
+  }
+
+  &__email {
+    border: none;
+
+    &__field {
+      padding-bottom: 25px;
     }
   }
 
   &__input-email {
     box-shadow: inset 0 -2px 0 $text-black;
+    box-sizing: border-box;
+    padding-right: 40px;
+    padding-bottom: 15px;
 
     &::placeholder {
       opacity: 0.3;
@@ -71,10 +189,20 @@
     }
   }
 
+  &__additional {
+    border: none;
+  }
+
   &__additional-textarea {
     box-shadow: inset 0 -2px 0 $text-black;
-    border: 2px solid $dark-gray;
+    border: 1px solid $dark-gray;
     background-color: $white;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    width: 260px;
+    min-height: 140px;
+    padding-top: 15px;
+    padding-left: 15px;
 
     &::placeholder {
       opacity: 0.3;
@@ -90,13 +218,13 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 32px;
+    margin-left: 15px;
   }
 
   &__submit-button {
-    width: 260px;
-    height: 52px;
-    border: 2px solid $dark-gray;
-    background-color: $white;
+    width: 100%;
     font-size: 17px;
     font-weight: 700;
     line-height: 0.94;
@@ -138,11 +266,13 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: space-between;
+      padding-left: 0;
     }
 
     &__personal-wrapper {
       display: flex;
       flex-direction: row;
+      padding-left: 30px;
     }
 
     &__personal-label {
@@ -223,6 +353,10 @@
       font-size: 17px;
       font-weight: 400;
       line-height: 1.76;
+      padding: 0;
+      margin: 0;
+      margin-top: 11px;
+      margin-left: 31px;
     }
 
     &__submit-button {

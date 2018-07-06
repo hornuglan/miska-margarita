@@ -1,13 +1,24 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
   position: relative;
 
+  &__container {
+    width: 260px;
+    margin-right: auto;
+  }
+
   &__title {
-    width: 105px;
-    height: 20px;
     color: $text-black;
     font-size: 25px;
     font-weight: 700;
     line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    padding-top: 44px;
   }
 
   &__create {
@@ -15,8 +26,19 @@
     height: 52px;
     border: 2px solid $dark-gray;
     background-color: $white;
+    margin-top: 37px;
+    margin-bottom: 50px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+    padding-left: 81px;
+    padding-right: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.11;
+    text-transform: uppercase;
   }
 }
+
 
 @media (min-width: $tablet-width) {
   .reviews {

@@ -5,30 +5,54 @@
     align-items: center;
   }
 
+  &__info {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   &__title {
     color: $text-black;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.67;
+    padding: 0;
+    margin: 0;
+    padding-left: 28px;
+    padding-top: 36px;
   }
 
   &__all {
     font-size: 15px;
-    line-height: 30px;
+    margin-left: 28px;
+    margin-top: 25px;
+    margin-bottom: 38px;
+    padding-right: 30px;
   }
 
   &__details {
     display: flex;
-    align-items: flex-start;
     color: $dark-gray;
     font-size: 15px;
     font-weight: 400;
     line-height: 2;
+
+    &__key {
+      vertical-align: top;
+    }
+
+    &__value {
+      padding-left: 10px;
+
+      &--email {
+        border-bottom: 1px solid $mint;
+      }
+    }
   }
 
   &__map {
-    position: relative;
-    align-self: stretch;
+    border: none;
+    width: 100%;
+    min-width: 320px;
   }
 
   &__button {
@@ -41,6 +65,7 @@
     font-weight: 700;
     line-height: 1.11;
     text-transform: uppercase;
+    margin: 39px 30px;
   }
 }
 
