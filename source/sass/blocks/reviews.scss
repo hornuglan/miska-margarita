@@ -1,13 +1,10 @@
 .reviews {
+  @include container;
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: auto;
   position: relative;
 
   &__container {
-    width: 260px;
     margin-right: auto;
   }
 
@@ -18,24 +15,16 @@
     line-height: 1.2;
     margin: 0;
     padding: 0;
-    padding-top: 44px;
+    padding-top: 24px;
   }
 
   &__create {
-    width: 260px;
-    height: 52px;
-    border: 2px solid $dark-gray;
-    background-color: $white;
     margin-top: 37px;
     margin-bottom: 50px;
-    padding-top: 19px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 13px;
     padding-left: 81px;
     padding-right: 80px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.11;
-    text-transform: uppercase;
   }
 }
 

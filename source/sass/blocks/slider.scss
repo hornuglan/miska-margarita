@@ -2,7 +2,8 @@
   background-color: $white;
 
   &__item {
-    margin-left: auto;
+    margin: 0;
+    padding-bottom: 0;
 
     &--prev {
       display: none;
@@ -12,13 +13,15 @@
   &__navigation {
     display: flex;
     margin-bottom: 30px;
+    margin-top: 31px;
   }
 
   &__arrow {
     border: 1px solid $light-gray;
-    padding: 0;
     padding-right: 14px;
     padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     text-decoration: none;
     text-transform: uppercase;
     justify-content: center;

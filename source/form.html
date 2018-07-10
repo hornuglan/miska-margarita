@@ -19,7 +19,7 @@
         </a>
       </div>
 
-      <nav class="main-menu">
+      <nav class="main-menu main-menu--closed main-menu--nojs">
 
         <button class="main-menu__button-icon" type="button" aria-label="Открыть главное меню"></button>
 
@@ -71,6 +71,7 @@
         <div class="form__wrapper form__wrapper--type">
       <fieldset class="form__type">
         <legend class="form__legend form__type-title">Тип</legend>
+        <div class="form__type-container">
         <div class="form__radio">
           <input class="form__radio-button" name="type" id="type-1" value="type-1" type="radio">
           <label class="form__radio-label" for="type-1">Аксессуар для интерьера</label>
@@ -79,12 +80,14 @@
           <input class="form__radio-button" name="type" id="type-2" value="type-2" type="radio">
           <label class="form__radio-label" for="type-2">Детская игрушка</label>
         </div>
+        </div>
       </fieldset>
       </div>
 
       <div class="form__wrapper form__wrapper--color">
-      <fieldset class="form__color color">
+      <fieldset class="form__color">
         <legend class="form__legend form__color-title">Цвет</legend>
+        <div class="color__container">
         <div class="color__checkbox">
           <input class="color__checkbox-item" name="color[]" id="color-1" value="color-1" type="checkbox" checked>
           <label class="color__label color__label-checkbox" for="color-1">Белый</label>
@@ -109,12 +112,14 @@
           <input class="color__checkbox-item" name="color[]" id="color-6" value="color-6" type="checkbox">
           <label class="color__label color__label-checkbox" for="color-6">Оранжевый</label>
         </div>
+        </div>
       </fieldset>
     </div>
 
     <div class="form__wrapper form__wrapper--name">
       <fieldset class="form__personal">
         <legend class="form__legend personal__title">ФИО</legend>
+        <div class="form__personal-container">
         <div class="form__personal form__personal-wrapper">
           <label class="form__personal-label" for="name">Имя:</label>
           <input class="form__personal-name" name="name" id="name" type="text" placeholder="Введите Ваше имя*" required>
@@ -126,6 +131,7 @@
         <div class="form__personal form__personal-wrapper">
           <label class="form__personal-label" for="middle-name">Отчество:</label>
           <input class="form__personal-name" name="middle-name" id="middle-name" type="text" placeholder="Отчество, если желаете">
+        </div>
         </div>
       </fieldset>
       </div>
@@ -163,7 +169,7 @@
 
       <div class="form__wrapper form__wrapper--note">
       <p class="form__text-note">*Поля обязательны для заполнения</p>
-      <div class="form__submit-button">
+      <div class="form__submit">
         <button class="form__submit-button button" type="submit" name="submit-button">Отправить заказ</button>
       </div>
       </div>
@@ -198,4 +204,7 @@
       </div>
     </footer>
 
+    <script src="/js/menu.js"></script>
+
+  </body>
 </html>

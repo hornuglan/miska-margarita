@@ -1,13 +1,10 @@
 .contacts {
+  @include container;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  &__info {
-    width: 320px;
-    margin: 0 auto;
   }
 
   &__title {
@@ -17,16 +14,7 @@
     line-height: 1.67;
     padding: 0;
     margin: 0;
-    padding-left: 28px;
     padding-top: 36px;
-  }
-
-  &__all {
-    font-size: 15px;
-    margin-left: 28px;
-    margin-top: 25px;
-    margin-bottom: 38px;
-    padding-right: 30px;
   }
 
   &__details {
@@ -35,6 +23,7 @@
     font-size: 15px;
     font-weight: 400;
     line-height: 2;
+    padding-top: 19px;
 
     &__key {
       vertical-align: top;
@@ -45,6 +34,7 @@
 
       &--email {
         border-bottom: 1px solid $mint;
+        text-decoration: none;
       }
     }
   }
@@ -53,19 +43,16 @@
     border: none;
     width: 100%;
     min-width: 320px;
+    margin-top: 90px;
   }
 
   &__button {
-    width: 260px;
-    height: 52px;
-    border: 2px solid $dark-gray;
-    background-color: $white;
-    color: $dark-gray;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.11;
-    text-transform: uppercase;
-    margin: 39px 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 53px;
+    padding-left: 53px;
+    margin-top: 35px;
+    margin-bottom: 39px;
   }
 }
 

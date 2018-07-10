@@ -1,6 +1,5 @@
 .features-list {
   background-color: $white;
-  padding-left: 29px;
 
   &__advantages {
     @include list;
@@ -14,7 +13,7 @@
     margin: 0;
     background-repeat: no-repeat;
     position: relative;
-    padding-top: 30px;
+    padding-top: 50px;
 
     &--eco::after {
       background: url("/img/icon-feature-flower.svg");

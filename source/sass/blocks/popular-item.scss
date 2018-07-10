@@ -1,7 +1,6 @@
 .popular-item {
+  @include container;
   background-color: $white;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 41px;
   position: relative;
@@ -37,7 +36,8 @@
     font-weight: 400;
     line-height: 1.6;
     margin-top: 5px;
-    margin-bottom: 16px;
+    margin-bottom: 26px;
+    padding-top: 15px;
   }
 
   &__table {
@@ -52,18 +52,21 @@
   &__table-key {
     width: 98px;
     border-bottom: 1px solid $light-gray;
+    padding-bottom: 20px;
   }
 
   &__table-value {
     width: 43px;
     height: 31px;
     border-bottom: 1px solid $light-gray;
+    padding-bottom: 20px;
+    padding-right: 27px;
   }
 
   &__image {
     width: 260px;
     height: 315px;
-    margin-top: 28px;
+    margin-top: 15px;
   }
 
   &__footer {
@@ -73,199 +76,207 @@
 
   &__price {
     align-self: center;
-    margin-top: 19px;
+    margin-top: 23px;
     color: $dark-gray;
     font-size: 17px;
     font-weight: 700;
     line-height: 1.41;
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 85px;
+    padding-right: 84px;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .popular-item {
-    &__description {
-      display: flex;
-      flex-direction: row;
-    }
+// @media (min-width: $tablet-width) {
+//   .popular-item {
+//     &__description {
+//       display: flex;
+//       flex-direction: row;
+//     }
 
-    &__header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-    }
+//     &__header {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: space-between;
+//     }
 
-    &__type {
-      width: 420px;
-      height: 42px;
-      color: $text-black;
-      font-size: 43px;
-      font-weight: 700;
-      line-height: 1.16;
-    }
+//     &__type {
+//       width: 420px;
+//       height: 42px;
+//       color: $text-black;
+//       font-size: 43px;
+//       font-weight: 700;
+//       line-height: 1.16;
+//     }
 
-    &__title {
-      width: 70px;
-      height: 33px;
-      color: $mint;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1;
-      text-transform: uppercase;
-    }
+//     &__title {
+//       width: 70px;
+//       height: 33px;
+//       color: $mint;
+//       font-size: 17px;
+//       font-weight: 700;
+//       line-height: 1;
+//       text-transform: uppercase;
+//     }
 
-    &__description-inner {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-    }
+//     &__description-inner {
+//       display: flex;
+//       flex-direction: column;
+//       width: 50%;
+//     }
 
-    &__text {
-      width: 282px;
-      height: 77px;
-      color: $dark-gray;
-      font-size: 17px;
-      font-weight: 400;
-      line-height: 1.76;
-    }
+//     &__text {
+//       width: 282px;
+//       height: 77px;
+//       color: $dark-gray;
+//       font-size: 17px;
+//       font-weight: 400;
+//       line-height: 1.76;
+//     }
 
-    &__table {
-      color: $dark-gray;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 1.33;
-    }
+//     &__table {
+//       color: $dark-gray;
+//       font-size: 15px;
+//       font-weight: 400;
+//       line-height: 1.33;
+//     }
 
-    &__table-key {
-      width: 67px;
-      height: 92px;
-    }
+//     &__table-key {
+//       width: 67px;
+//       height: 92px;
+//     }
 
-    &__table-value {
-      width: 129px;
-      height: 93px;
-    }
+//     &__table-value {
+//       width: 129px;
+//       height: 93px;
+//     }
 
-    &__image {
-      width: 333px;
-      height: 404px;
-      padding-bottom: 0;
-      order: 3;
-    }
+//     &__image {
+//       width: 333px;
+//       height: 404px;
+//       padding-bottom: 0;
+//       order: 3;
+//     }
 
-    &__footer {
-      width: 336px;
-      height: 114px;
-      margin-top: auto;
-      order: 2;
-    }
+//     &__footer {
+//       width: 336px;
+//       height: 114px;
+//       margin-top: auto;
+//       order: 2;
+//     }
 
-    &__price {
-      width: 144px;
-      height: 21px;
-      color: $dark-gray;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
+//     &__price {
+//       width: 144px;
+//       height: 21px;
+//       color: $dark-gray;
+//       font-size: 20px;
+//       font-weight: 700;
+//       line-height: 1.2;
+//     }
 
-    &__button {
-      width: 292px;
-      height: 52px;
-      border: 2px solid $dark-gray;
-      background-color: $white;
-      color: $dark-gray;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.18;
-      text-transform: uppercase;
-    }
-  }
-}
+//     &__button {
+//       width: 292px;
+//       height: 52px;
+//       border: 2px solid $dark-gray;
+//       background-color: $white;
+//       color: $dark-gray;
+//       font-size: 17px;
+//       font-weight: 700;
+//       line-height: 1.18;
+//       text-transform: uppercase;
+//     }
+//   }
+// }
 
-@media (min-width: $desktop-width) {
-  .popular-item {
-    display: flex;
-    flex-direction: column;
-    background-color: $white;
-    width: 1048px;
+// @media (min-width: $desktop-width) {
+//   .popular-item {
+//     display: flex;
+//     flex-direction: column;
+//     background-color: $white;
+//     width: 1048px;
 
-    &__header {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
+//     &__header {
+//       display: flex;
+//       justify-content: flex-start;
+//       align-items: center;
+//     }
 
-    &__type {
-      width: 515px;
-      height: 51px;
-      color: $text-black;
-      font-size: 53px;
-      font-weight: 700;
-      line-height: 1.08;
-      order: 2;
-    }
+//     &__type {
+//       width: 515px;
+//       height: 51px;
+//       color: $text-black;
+//       font-size: 53px;
+//       font-weight: 700;
+//       line-height: 1.08;
+//       order: 2;
+//     }
 
-    &__title {
-      width: 70px;
-      height: 33px;
-      color: $mint;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1;
-      text-transform: uppercase;
-      order: 1;
-    }
+//     &__title {
+//       width: 70px;
+//       height: 33px;
+//       color: $mint;
+//       font-size: 17px;
+//       font-weight: 700;
+//       line-height: 1;
+//       text-transform: uppercase;
+//       order: 1;
+//     }
 
-    &__text {
-      width: 282px;
-      height: 77px;
-      color: $dark-gray;
-      font-size: 17px;
-      font-weight: 400;
-      line-height: 1.76;
-    }
+//     &__text {
+//       width: 282px;
+//       height: 77px;
+//       color: $dark-gray;
+//       font-size: 17px;
+//       font-weight: 400;
+//       line-height: 1.76;
+//     }
 
-    &__table {
-      color: $dark-gray;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 1.33;
-    }
+//     &__table {
+//       color: $dark-gray;
+//       font-size: 15px;
+//       font-weight: 400;
+//       line-height: 1.33;
+//     }
 
-    &__table-key {
-      width: 67px;
-      height: 92px;
-    }
+//     &__table-key {
+//       width: 67px;
+//       height: 92px;
+//     }
 
-    &__table-value {
-      width: 129px;
-      height: 93px;
-    }
+//     &__table-value {
+//       width: 129px;
+//       height: 93px;
+//     }
 
-    &__image {
-      width: 525px;
-      height: 636px;
-    }
+//     &__image {
+//       width: 525px;
+//       height: 636px;
+//     }
 
-    &__price {
-      width: 144px;
-      height: 21px;
-      color: $dark-gray;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
+//     &__price {
+//       width: 144px;
+//       height: 21px;
+//       color: $dark-gray;
+//       font-size: 20px;
+//       font-weight: 700;
+//       line-height: 1.2;
+//     }
 
-    &__button {
-      width: 292px;
-      height: 52px;
-      border: 2px solid $dark-gray;
-      background-color: $white;
-      color: $dark-gray;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.18;
-      text-transform: uppercase;
-    }
-  }
-}
+//     &__button {
+//       width: 292px;
+//       height: 52px;
+//       border: 2px solid $dark-gray;
+//       background-color: $white;
+//       color: $dark-gray;
+//       font-size: 17px;
+//       font-weight: 700;
+//       line-height: 1.18;
+//       text-transform: uppercase;
+//     }
+//   }
+// }

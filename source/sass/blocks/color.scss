@@ -1,9 +1,15 @@
 .color {
-  border: 0 none;
+  &__container {
+    padding-bottom: 30px;
+  }
 
   &__checkbox {
     padding-left: 60px;
     margin-bottom: 43px;
+  }
+
+  &__checkbox:last-child {
+    margin-bottom: 0;
   }
 
   &__checkbox-item {

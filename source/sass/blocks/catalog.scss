@@ -1,8 +1,6 @@
 .catalog {
+  @include container;
   background-color: $white;
-  margin: auto;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 31px;
 }
 
