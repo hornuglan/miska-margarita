@@ -1,0 +1,20 @@
+.category-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .category-list {
+    &__item {
+      padding-right: 37px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .category-list {
+    color: $text-black;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.41;
+  }
+}

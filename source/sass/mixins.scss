@@ -10,4 +10,14 @@
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 730px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

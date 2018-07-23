@@ -51,7 +51,7 @@
     margin: 0;
     padding: 0;
     padding-top: 15px;
-    padding-right: 40px;
+    padding-right: 34px;
     padding-left: 33px;
   }
 
@@ -66,31 +66,65 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    width: 668px;
+    padding-right: 45px;
+    padding-left: 0;
+    padding-top: 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-bottom: 78px;
 
     &__title {
-      width: 241px;
-      height: 20px;
       color: $text-black;
       font-size: 20px;
       font-weight: 700;
       line-height: 1.2;
+      padding-top: 40px;
+      padding-left: 16px;
+      padding-right: 0;
+
+      &::before {
+        background: url("/img/icon-video.svg");
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: 36px;
+        left: -48px;
+        width: 32px;
+        height: 32px;
+      }
     }
 
     &__video {
       width: 668px;
       height: 455px;
-      order: 1;
+      background-image: url("/img/video-mobile@1x.jpg");
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      order: -1;
+    }
+
+    &__video-button {
+      width: 112px;
+      height: 77px;
+      background-color: transparent;
+      border: none;
+    }
+
+    &__description {
+      margin: 0;
+      padding-bottom: 0;
+      padding-top: 3px;
+      padding-right: 0;
+      padding-left: 39px;
     }
 
     &__text {
-      width: 581px;
-      height: 46px;
       color: $dark-gray;
       font-size: 15px;
       font-weight: 400;
       line-height: 2;
+      margin-bottom: 35px;
     }
   }
 }
@@ -99,33 +133,56 @@
   .promo {
     display: flex;
     flex-direction: column;
-    width: 1049px;
-    height: 455px;
+    flex-wrap: wrap;
+    width: 1050px;
+    max-height: 455px;
     border: 1px solid $light-gray;
     background-color: $white;
+    margin-bottom: 106px;
 
     &__title {
       width: 148px;
-      height: 44px;
+      padding: 0;
+      padding-top: 94px;
+      padding-left: 76px;
       color: $text-black;
       font-size: 20px;
       font-weight: 700;
       line-height: 1.2;
+      margin-left: 0;
+
+      &::before {
+        background: url("/img/icon-video.svg");
+        background-repeat: no-repeat;
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 78px;
+        width: 32px;
+        height: 32px;
+      }
     }
 
     &__video {
       width: 682px;
       height: 455px;
-      order: 1;
+      order: -1;
+    }
+
+    &__description {
+      padding-left: 78px;
     }
 
     &__text {
-      width: 222px;
-      height: 106px;
+      width: 370px;
       color: $dark-gray;
       font-size: 15px;
       font-weight: 400;
       line-height: 2;
+      padding-top: 11px;
+      padding-left: 0;
+      padding-right: 75px;
+      padding-bottom: 10px;
     }
   }
 }

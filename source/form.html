@@ -21,37 +21,44 @@
 
       <nav class="main-menu main-menu--closed main-menu--nojs">
 
-        <button class="main-menu__button-icon" type="button" aria-label="Открыть главное меню"></button>
+          <button class="main-menu__button-icon" type="button" aria-label="Открыть главное меню"></button>
 
 
-        <ul class="main-menu__list category-list">
-          <li class="category-list__item">
-            <a class="category-list__link" href="/catalog.html">Каталог товаров</a>
-          </li>
-          <li class="category-list__item">
-            <a class="category-list__link" href="/form.html">Вязание на заказ</a>
-          </li>
-        </ul>
+          <ul class="main-menu__list main-menu__category-list category-list">
+            <li class="category-list__item">
+              <a class="category-list__link" href="/catalog.html">Каталог товаров</a>
+            </li>
+            <li class="category-list__item">
+              <a class="category-list__link" href="/form.html">Вязание на заказ</a>
+            </li>
+          </ul>
 
-        <ul class="main-menu__list user-list">
-          <li class="user-list__item">
-            <a class="user-list__link">Поиск</a>
-          </li>
-          <li class="user-list__item">
-            <a class="user-list__link">Корзина: пока пуста</a>
-          </li>
-        </ul>
+          <ul class="main-menu__list main-menu__user-list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link">
+                  <svg  class="user-list__link-img" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                    <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                  </svg>
+              <p>Поиск</p>
+              </a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link">Корзина: пока пуста</a>
+            </li>
+          </ul>
 
-        <ul class="main-menu__list desktop-list">
-          <li class="desktop-list__item">
-            <a class="desktop-list__link">Новые поступления</a>
-          </li>
-          <li class="desktop-list__item">
-            <a class="desktop-list__link">Распродажа</a>
-          </li>
-        </ul>
+          <ul class="main-menu__list main-menu__desktop-list desktop-list">
+            <li class="desktop-list__item">
+              <a class="desktop-list__link">Новые поступления</a>
+            </li>
+            <li class="desktop-list__item">
+              <a class="desktop-list__link">Распродажа</a>
+            </li>
+          </ul>
 
-      </nav>
+          <span class="main-menu__list main-menu__delivery-list">Бесплатная доставка по&nbsp;России</span>
+
+        </nav>
     </div>
     </header>
 
@@ -118,11 +125,11 @@
 
     <div class="form__wrapper form__wrapper--name">
       <fieldset class="form__personal">
-        <legend class="form__legend personal__title">ФИО</legend>
+        <legend class="form__legend form__legend--name">ФИО</legend>
         <div class="form__personal-container">
         <div class="form__personal form__personal-wrapper">
           <label class="form__personal-label" for="name">Имя:</label>
-          <input class="form__personal-name" name="name" id="name" type="text" placeholder="Введите Ваше имя*" required>
+          <input class="form__personal-name form__personal-name--name" name="name" id="name" type="text" placeholder="Введите Ваше имя*" required>
         </div>
         <div class="form__personal form__personal-wrapper">
           <label class="form__personal-label" for="surname">Фамилия:</label>
@@ -138,7 +145,7 @@
 
       <div class="form__wrapper form__wrapper--contacts">
         <fieldset class="form__tel">
-          <legend class="form__legend">
+          <legend class="form__legend form__legend--tel">
             <label>Тел</label>
           </legend>
           <div class="form__tel-field">
@@ -147,7 +154,7 @@
         </fieldset>
 
         <fieldset class="form__email">
-          <legend class="form__legend">
+          <legend class="form__legend form__legend--email">
             <label>E-mail</label>
           </legend>
           <div class="form__email-field">
@@ -158,7 +165,7 @@
 
       <div class="form__wrapper form__wrapper--wishes">
       <fieldset class="form__additional">
-        <legend class="form__legend">
+        <legend class="form__legend form__legend--additional">
           <label>Доп</label>
         </legend>
         <div class="form__additional-field">
@@ -180,6 +187,12 @@
   <footer class="page-footer">
       <div class="page-footer__wrapper">
 
+          <div class="page-footer__logo">
+              <a class="page-footer__logo-link" href="#">
+                  <img class="page-footer__logo-img" src="/img/logo-mobile.svg" alt="Mishka">
+                </a>
+          </div>
+
         <ul class="social">
           <li>
             <a class="social__link social__link--instagram" href="#" aria-label="Инстаграм"></a>
@@ -193,9 +206,6 @@
         </ul>
 
         <div class="page-footer__copyright copyright">
-          <a class="copyright__logo" href="#">
-            <img src="/img/logo-mobile.svg" alt="Mishka">
-          </a>
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="#">
             <img src="/img/logo-htmlacademy.svg" class="copyright__link-logo" alt="logo">

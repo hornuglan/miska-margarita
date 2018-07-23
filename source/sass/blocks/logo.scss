@@ -1,8 +1,9 @@
 .logo {
   display: block;
-  width: 90px;
   margin: 0 auto;
-  padding: 15px 0 30px;
+  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-left: 87px;
 
   &__image {
     width: 86px;
@@ -14,6 +15,7 @@
   .logo {
     display: flex;
     flex-direction: row;
+    padding-left: 26px;
 
     &__image {
       width: 113px;

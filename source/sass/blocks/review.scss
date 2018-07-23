@@ -6,8 +6,8 @@
     line-height: 2;
     margin: 0;
     padding: 0;
-    padding-top: 30px;
-    padding-bottom: 27px;
+    padding-top: 23px;
+    padding-bottom: 30px;
   }
 
   &__author {
@@ -40,18 +40,17 @@
     justify-content: center;
 
     &__text {
-      width: 642px;
-      height: 107px;
       color: $dark-gray;
       font-size: 17px;
       font-weight: 400;
       line-height: 1.76;
+      padding-top: 46px;
+      padding-bottom: 0;
     }
 
     &__author {
-      width: 254px;
-      height: 45px;
       color: $text-black;
+      padding-top: 55px;
     }
 
     &__author-name {
@@ -72,19 +71,21 @@
 @media (min-width: $desktop-width) {
   .review {
     &__text {
-      width: 768px;
-      height: 77px;
       color: $dark-gray;
       font-size: 17px;
       font-weight: 400;
       line-height: 1.76;
+      padding-left: 39px;
+      padding-right: 100px;
+      padding-top: 44px;
     }
 
     &__author {
-      width: 241px;
-      height: 45px;
       color: $text-black;
       font-size: 17px;
+      padding-top: 34px;
+      padding-left: 41px;
+      padding-right: 0;
     }
 
     &__author-name {

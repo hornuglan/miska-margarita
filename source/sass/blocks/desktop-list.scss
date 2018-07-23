@@ -1,0 +1,20 @@
+.desktop-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .desktop-list {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .desktop-list {
+    display: flex;
+    height: 15px;
+    color: $text-black;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+}

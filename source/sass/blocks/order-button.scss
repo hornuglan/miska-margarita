@@ -8,22 +8,22 @@
   margin-bottom: 31px;
   box-sizing: border-box;
   display: inline-block;
-  padding-top: 15px;
+  padding-left: 22px;
+  padding-right: 24px;
+  padding-top: 17px;
   padding-bottom: 15px;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   color: $text-black;
   cursor: pointer;
-  width: 192px;
-}
+  }
 
 @media (min-width: $tablet-width) {
   .order-button {
+    width: 100%;
     display: flex;
     justify-content: center;
-    width: 584px;
-    height: 52px;
     border: 2px solid $dark-gray;
     background-color: $white;
     color: $dark-gray;
@@ -38,8 +38,6 @@
   .order-button {
     display: flex;
     justify-content: flex-end;
-    width: 230px;
-    height: 52px;
     border: 2px solid $dark-gray;
     background-color: $white;
     color: $dark-gray;
@@ -47,5 +45,10 @@
     font-weight: 700;
     line-height: 0.94;
     text-transform: uppercase;
+    padding-right: 46px;
+    padding-left: 29px;
+    padding-top: 17px;
+    padding-bottom: 14px;
+    width: 230px;
   }
 }

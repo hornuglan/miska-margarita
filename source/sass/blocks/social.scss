@@ -32,6 +32,11 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    flex-wrap: nowrap;
+    padding-left: 134px;
+    padding-right: 0;
+    padding-top: 5px;
+
     &__link {
       display: flex;
       align-items: center;
@@ -60,6 +65,10 @@
 
 @media (min-width: $desktop-width) {
   .social {
+    padding-left: 363px;
+    padding-right: 0;
+    padding-top: 1px;
+
     &__link {
       display: flex;
       align-items: center;

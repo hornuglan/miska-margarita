@@ -4,10 +4,11 @@ $bg-mint: #149080;
   margin: auto;
   padding: 0;
   max-width: 320px;
-  background-color: $mint;
+  margin-top: -18px;
 
   &__list {
     @include list;
+    background-color: $mint;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -20,6 +21,7 @@ $bg-mint: #149080;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
+    padding-bottom: 24px;
   }
 
   &__item-link {
@@ -30,9 +32,9 @@ $bg-mint: #149080;
     display: flex;
     position: relative;
     font-weight: 700;
-    padding-top: 25px;
+    padding-top: 32px;
     padding-right: 30px;
-    padding-bottom: 29px;
+    padding-bottom: 3px;
     padding-left: 30px;
 
     &--interior::after {
@@ -62,60 +64,82 @@ $bg-mint: #149080;
   }
 
   &__item-text {
-    width: 175px;
     color: $white;
     font-size: 19px;
     font-weight: 700;
     line-height: 1.26;
     text-decoration: none;
+    padding-right: 90px;
   }
 }
 
 
-// @media (min-width: $tablet-width) {
-//   .category {
-//     display: flex;
-//     flex-direction: row;
+@media (min-width: $tablet-width) {
+  .category {
+    margin: auto;
+    padding: 0;
+    max-width: 768px;
+    margin-top: -121px;
+    margin-left: 50px;
+    margin-right: 50px;
 
-//     &__item {
-//       color: $white;
-//       font-size: 20px;
-//       font-weight: 700;
-//       line-height: 1.5;
+    &__list {
+      @include list;
+      display: flex;
+      flex-direction: row;
+    }
 
-//       &--interior {
-//         background-color: $mint;
-//         background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
-//       }
+    &__item {
+      width: 50%;
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
 
-//       &--toys {
-//         background-color: $dark-mint;
-//         background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
-//       }
-//     }
-//   }
-// }
+      &--interior {
+        background-color: $mint;
+        background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
+      }
 
-// @media (min-width: $desktop-width) {
-//   .category {
-//     display: flex;
-//     flex-direction: row;
+      &--toys {
+        background-color: $dark-mint;
+        background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
+      }
+    }
+  }
+}
 
-//     &__item {
-//       color: $white;
-//       font-size: 20px;
-//       font-weight: 700;
-//       line-height: 1.5;
+@media (min-width: $desktop-width) {
+  .category {
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    width: 1050px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
 
-//       &--interior {
-//         background-color: $mint;
-//         background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
-//       }
+    &__list {
+      width: 100%;
+    }
 
-//       &--toys {
-//         background-color: $dark-mint;
-//         background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
-//       }
-//     }
-//   }
-// }
+    &__item {
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    &__item-link {
+      &--interior::after {
+        top: 34px;
+      }
+
+      &--toy::after {
+        top: 35px;
+        right: 35px;
+      }
+    }
+  }
+}
