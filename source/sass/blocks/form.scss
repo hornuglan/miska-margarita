@@ -84,7 +84,7 @@
   }
 
   &__radio-button {
-    display: none;
+    opacity: 0;
   }
 
   &__radio-button + label::before {
@@ -109,6 +109,10 @@
     border-radius: 50%;
   }
 
+  &__radio-button:focus + label::before {
+    border: 2px solid $mint;
+  }
+
   &__radio-label {
     color: $text-black;
     font-size: 17px;
@@ -117,6 +121,14 @@
     position: relative;
     display: block;
     cursor: pointer;
+
+    &:hover::before {
+      border: 2px solid $mint;
+    }
+
+    &:active::before {
+      border: 2px solid $gray;
+    }
   }
 
   &__color {
@@ -163,10 +175,18 @@
     box-sizing: border-box;
     border: none;
     outline: none;
-    width: 260px;
-    height: 38px;
-    padding-bottom: 7px;
+    width: 100%;
+    padding-bottom: 12px;
     margin-bottom: 9px;
+    padding-right: 66px;
+
+    &:hover {
+      box-shadow: inset 0 -2px 0 $mint;
+    }
+
+    &:active {
+      box-shadow: inset 0 -3px 0 $dark-mint;
+    }
   }
 
   &::placeholder {
@@ -175,6 +195,10 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 1.06;
+
+    &:active {
+      color: $text-black;
+    }
   }
 
   &__contact-wrapper {
@@ -184,7 +208,7 @@
   }
 
   &__tel {
-    width: 260px;
+
     border: none;
     padding: 0;
     padding-bottom: 32px;
@@ -200,6 +224,7 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 4px;
+    width: 100%;
 
     &::placeholder {
       position: relative;
@@ -209,10 +234,13 @@
       font-weight: 400;
       line-height: 1.06;
     }
+
+    &:hover {
+      box-shadow: inset 0 -2px 0 $mint;
+    }
   }
 
   &__email {
-    width: 260px;
     border: none;
     padding: 0;
     margin-bottom: 17px;
@@ -228,6 +256,7 @@
     padding-right: 40px;
     margin-top: 0;
     padding-bottom: 4px;
+    width: 100%;
 
     &::placeholder {
       opacity: 0.3;
@@ -235,6 +264,10 @@
       font-size: 17px;
       font-weight: 400;
       line-height: 1.06;
+    }
+
+    &:hover {
+      box-shadow: inset 0 -2px 0 $mint;
     }
   }
 
@@ -244,12 +277,11 @@
   }
 
   &__additional-textarea {
-    box-shadow: inset 0 -2px 0 $text-black;
     border: 1px solid $dark-gray;
     background-color: $white;
     box-sizing: border-box;
     padding-bottom: 15px;
-    width: 260px;
+    width: 100%;
     min-height: 140px;
     padding-top: 15px;
     padding-left: 15px;
@@ -260,6 +292,10 @@
       font-size: 17px;
       font-weight: 400;
       line-height: 1.06;
+    }
+
+    &:hover {
+      border: 1px solid $mint;
     }
   }
 
@@ -282,6 +318,16 @@
     padding-bottom: 16px;
     padding-left: 30px;
     padding-right: 30px;
+
+    &:hover {
+      background-color: $dark-gray;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $dark-gray;
+      color: $button-down;
+    }
   }
 }
 
@@ -463,6 +509,7 @@
     &__personal-name {
       box-shadow: inset 0 -2px 0 $text-black;
       flex-grow: 1;
+      width: auto;
 
       &::placeholder {
         opacity: 0.3;
@@ -491,7 +538,7 @@
       box-shadow: inset 0 -2px 0 $text-black;
       background-color: $gray;
       padding-bottom: 13px;
-      width: 501px;
+      width: auto;
 
       &::placeholder {
         opacity: 0.3;
@@ -513,7 +560,7 @@
       box-shadow: inset 0 -2px 0 $text-black;
       background-color: $gray;
       padding-bottom: 13px;
-      width: 501px;
+      width: auto;
 
       &::placeholder {
         opacity: 0.3;
@@ -533,10 +580,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      box-shadow: inset 0 -2px 0 $text-black;
       border: 2px solid $dark-gray;
       background-color: $white;
-      width: 501px;
+      width: auto;
 
       &::placeholder {
         opacity: 0.3;
@@ -709,7 +755,6 @@
       flex-direction: row;
       justify-content: space-between;
       box-shadow: inset 0 -2px 0 $text-black;
-      width: 700px;
       padding-left: 17px;
 
       &::placeholder {
@@ -726,7 +771,6 @@
       flex-direction: row;
       justify-content: space-between;
       box-shadow: inset 0 -2px 0 $text-black;
-      width: 700px;
       padding-left: 17px;
 
       &::placeholder {
@@ -746,10 +790,8 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      box-shadow: inset 0 -2px 0 $text-black;
       border: 2px solid $dark-gray;
       background-color: $white;
-      width: 700px;
 
       &::placeholder {
         opacity: 0.3;

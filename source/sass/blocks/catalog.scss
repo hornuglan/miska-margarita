@@ -14,15 +14,18 @@
   .catalog {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: $white;
     padding-top: 86px;
     padding-bottom: 59px;
 
     &__container {
-      width: 100%;
+      width: 1150px;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
     }
   }
 }

@@ -38,13 +38,25 @@
     align-items: center;
     height: 150px;
     background-image: url("/img/video-mobile@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   &__video-button {
-    width: 112px;
+    width: 101px;
     height: 77px;
     background-color: transparent;
     border: none;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.5s ease;
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
   }
 
   &__description {
@@ -98,7 +110,7 @@
     &__video {
       width: 668px;
       height: 455px;
-      background-image: url("/img/video-mobile@1x.jpg");
+      background-image: url("/img/video-tablet@1x.jpg");
       background-size: 100% 100%;
       background-repeat: no-repeat;
       order: -1;
@@ -166,6 +178,7 @@
     &__video {
       width: 682px;
       height: 455px;
+      background-image: url("/img/video-desktop@1x.jpg");
       order: -1;
     }
 

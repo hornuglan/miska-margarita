@@ -29,9 +29,18 @@
     display: inline-block;
     width: 50%;
     background-color: transparent;
+    cursor: pointer;
 
     &--next {
       border-left: none;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
@@ -46,19 +55,17 @@
       position: absolute;
       right: 41px;
       bottom: -70px;
+    }
 
-      &__arrow {
-        &--previous {
-          width: 50px;
-          height: 26px;
-          padding-left: 15px;
-        }
+    &__arrow {
+      border: none;
 
-        &--next {
-          width: 50px;
-          height: 26px;
-          padding-right: 12px;
-        }
+      &--previous {
+        padding-left: 15px;
+      }
+
+      &--next {
+        padding-right: 12px;
       }
     }
   }
@@ -73,7 +80,7 @@
     &__navigation {
       position: absolute;
       right: 60px;
-      bottom: -72px;
+      bottom: 73px;
 
       &__arrow {
         &--previous {

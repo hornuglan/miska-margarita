@@ -1,9 +1,9 @@
-$bg-mint: #149080;
+$interior-hover: #59d5bc;
+$toys-hover: #46c1ae;
 
 .category {
   margin: auto;
   padding: 0;
-  max-width: 320px;
   margin-top: -18px;
 
   &__list {
@@ -22,6 +22,25 @@ $bg-mint: #149080;
     font-weight: 700;
     line-height: 1.5;
     padding-bottom: 24px;
+    margin-bottom: -5px;
+
+    &:hover {
+      background-color: $interior-hover;
+      transform: translateY(-5px);
+      transition: transform 0.2s ease;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &--dark {
+      background-color: $dark-mint;
+
+      &:hover {
+        background-color: $toys-hover;
+      }
+    }
   }
 
   &__item-link {
@@ -37,29 +56,32 @@ $bg-mint: #149080;
     padding-bottom: 3px;
     padding-left: 30px;
 
-    &--interior::after {
+    &::after {
       content: "";
-      position: absolute;
-      top: 20px;
-      right: 35px;
-      width: 40px;
-      height: 62px;
-      background-image: url("/img/icon-interior.svg");
-      background-repeat: no-repeat;
       opacity: 0.5;
-    }
-
-    &--toy::after {
-      content: "";
       display: block;
       position: absolute;
-      width: 60px;
-      height: 60px;
-      background-image: url("/img/icon-toy.svg");
       background-repeat: no-repeat;
-      top: 21px;
-      right: 27px;
-      opacity: 0.5;
+    }
+
+    &--interior {
+      &::after {
+        top: 20px;
+        right: 35px;
+        width: 40px;
+        height: 62px;
+        background-image: url("/img/icon-interior.svg");
+      }
+    }
+
+    &--toy {
+      &::after {
+        width: 60px;
+        height: 60px;
+        background-image: url("/img/icon-toy.svg");
+        top: 21px;
+        right: 27px;
+      }
     }
   }
 
@@ -85,6 +107,7 @@ $bg-mint: #149080;
 
     &__list {
       @include list;
+      position: relative;
       display: flex;
       flex-direction: row;
     }
@@ -95,16 +118,6 @@ $bg-mint: #149080;
       font-size: 20px;
       font-weight: 700;
       line-height: 1.5;
-
-      &--interior {
-        background-color: $mint;
-        background-image: url("/img/icon-interior.svg") no-repeat opacity 0.5;
-      }
-
-      &--toys {
-        background-color: $dark-mint;
-        background-image: url("/img/icon-toy.svg") no-repeat opacity 0.5;
-      }
     }
   }
 }

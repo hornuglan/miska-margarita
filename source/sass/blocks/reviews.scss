@@ -21,10 +21,15 @@
   }
 
   &__create-btn {
-    padding-top: 15px;
-    padding-bottom: 13px;
-    padding-left: 81px;
-    padding-right: 80px;
+    &:hover {
+      background-color: $dark-gray;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $dark-gray;
+      color: $button-down;
+    }
   }
 }
 
@@ -34,7 +39,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 89px;
+    padding-top: 49px;
+    background-image: url("/img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: -4% -6%;
 
     &__container {
       display: flex;
@@ -76,10 +84,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 92px;
+    padding-top: 44px;
     padding-left: 184px;
     padding-right: 0;
-    margin-bottom: 142px;
+    padding-bottom: 143px;
+    margin-bottom: 0;
+    background-position: 6% -7%;
 
     &__items-wrapper {
       width: 100%;

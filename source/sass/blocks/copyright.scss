@@ -24,6 +24,16 @@
     position: absolute;
     right: 38px;
     bottom: 20px;
+    fill: $mint;
+
+    &:hover {
+      fill: $footer-img;
+    }
+
+    &:active {
+      fill: $footer-img;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -31,7 +41,7 @@
   .copyright {
     display: flex;
     min-height: 79px;
-    border-top: 1px solid $light-gray;
+    border-top: none;
     margin-top: 11px;
     justify-content: space-between;
     align-items: center;

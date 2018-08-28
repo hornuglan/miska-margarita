@@ -64,6 +64,8 @@
     width: 260px;
     height: 315px;
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__footer {
@@ -82,10 +84,15 @@
   }
 
   &__button {
-    padding-top: 17px;
-    padding-bottom: 11px;
-    padding-left: 85px;
-    padding-right: 84px;
+    &:hover {
+      background-color: $dark-gray;
+      color: $white;
+    }
+
+    &:active {
+      background-color: $dark-gray;
+      color: $button-down;
+    }
   }
 }
 
@@ -195,13 +202,6 @@
       padding-right: 6px;
       margin-bottom: 34px;
     }
-
-    &__button {
-      padding-top: 17px;
-      padding-bottom: 11px;
-      padding-left: 85px;
-      padding-right: 88px;
-    }
   }
 }
 
@@ -299,16 +299,6 @@
 
     &__footer-wrapper {
       padding-left: 176px;
-    }
-
-    &__button {
-      border: 2px solid $dark-gray;
-      background-color: $white;
-      color: $dark-gray;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.18;
-      text-transform: uppercase;
     }
   }
 }

@@ -11,10 +11,24 @@
 @media (min-width: $desktop-width) {
   .desktop-list {
     display: flex;
-    height: 15px;
-    color: $text-black;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.6;
+    top: 138px;
+    left: 123px;
+    cursor: pointer;
+
+    &__item {
+      padding-right: 59px;
+      color: $text-black;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.6;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
   }
 }

@@ -2,30 +2,25 @@
   @include list;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-end;
   padding-left: 35px;
 
   &__link {
-    margin-right: 40px;
-    background-repeat: no-repeat;
-    display: inline-block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -9px;
+    margin-right: 28px;
+    cursor: pointer;
 
-    &--instagram {
-      background-image: url("/img/icon-insta.svg");
-      width: 22px;
-      height: 21px;
+    &:hover {
+      fill: $footer-img;
     }
 
-    &--fb {
-      background-image: url("/img/icon-fb.svg");
-      width: 15px;
-      height: 28px;
-    }
-
-    &--twitter {
-      background-image: url("/img/icon-twitter.svg");
-      width: 23px;
-      height: 20px;
+    &:active {
+      fill: $footer-img;
+      opacity: 0.3;
     }
   }
 }
@@ -40,25 +35,8 @@
     &__link {
       display: flex;
       align-items: center;
-      background-repeat: no-repeat;
-
-      &--instagram {
-        width: 22px;
-        height: 21px;
-        background-image: url("/img/icon-insta.svg");
-      }
-
-      &--fb {
-        width: 15px;
-        height: 29px;
-        background-image: url("/img/icon-fb.svg");
-      }
-
-      &--twitter {
-        width: 24px;
-        height: 20px;
-        background-image: url("/img/icon-twitter.svg");
-      }
+      margin-left: -2px;
+      margin-right: 22px;
     }
   }
 }
@@ -72,25 +50,6 @@
     &__link {
       display: flex;
       align-items: center;
-      background-repeat: no-repeat;
-
-      &--instagram {
-        width: 22px;
-        height: 21px;
-        background-image: url("/img/icon-insta.svg");
-      }
-
-      &--fb {
-        width: 15px;
-        height: 29px;
-        background-image: url("/img/icon-fb.svg");
-      }
-
-      &--twitter {
-        width: 24px;
-        height: 20px;
-        background-image: url("/img/icon-twitter.svg");
-      }
     }
   }
 }

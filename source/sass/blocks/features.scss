@@ -16,6 +16,8 @@
 
 @media (min-width: $tablet-width) {
   .features {
+    margin-bottom: 45px;
+
     &__title {
       color: $text-black;
       font-size: 43px;
@@ -35,6 +37,7 @@
       line-height: 1.08;
       padding-top: 47px;
       padding-left: 171px;
+
     }
   }
 }

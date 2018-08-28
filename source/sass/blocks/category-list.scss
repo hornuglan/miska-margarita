@@ -4,17 +4,49 @@
 
 @media (min-width: $tablet-width) {
   .category-list {
+    position: absolute;
+    top: 110px;
+
     &__item {
       padding-right: 37px;
+      color: $text-black;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.6;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $text-black;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .category-list {
-    color: $text-black;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 1.41;
+    @include list;
+    position: absolute;
+    top: 64px;
+    left: 123px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    &__item {
+      padding-right: 74px;
+      color: $text-black;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.41;
+    }
   }
 }

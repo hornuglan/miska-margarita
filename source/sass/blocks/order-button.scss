@@ -1,52 +1,25 @@
 .order-button {
-  background-color: $white;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 0.94;
-  text-transform: uppercase;
-  align-self: center;
   margin-bottom: 31px;
-  box-sizing: border-box;
-  display: inline-block;
   padding-left: 22px;
   padding-right: 24px;
-  padding-top: 17px;
-  padding-bottom: 15px;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
-  color: $text-black;
-  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
 
 @media (min-width: $tablet-width) {
   .order-button {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    border: 2px solid $dark-gray;
-    background-color: $white;
-    color: $dark-gray;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 0.94;
-    text-transform: uppercase;
   }
 }
 
 @media (min-width: $desktop-width) {
   .order-button {
-    display: flex;
-    justify-content: flex-end;
-    border: 2px solid $dark-gray;
-    background-color: $white;
-    color: $dark-gray;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 0.94;
-    text-transform: uppercase;
-    padding-right: 46px;
-    padding-left: 29px;
     padding-top: 17px;
     padding-bottom: 14px;
     width: 230px;
