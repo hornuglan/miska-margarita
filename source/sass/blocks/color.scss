@@ -30,7 +30,7 @@
       border: 2px solid $mint;
     }
 
-    &:active::before {
+    &:focus::before {
       border: 2px solid $gray;
     }
   }

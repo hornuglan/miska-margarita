@@ -23,11 +23,11 @@ $toys-hover: #46c1ae;
     line-height: 1.5;
     padding-bottom: 24px;
     margin-bottom: -5px;
+    transition: transform 0.2s ease;
 
     &:hover {
       background-color: $interior-hover;
       transform: translateY(-5px);
-      transition: transform 0.2s ease;
     }
 
     &:active {

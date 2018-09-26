@@ -126,7 +126,7 @@
       border: 2px solid $mint;
     }
 
-    &:active::before {
+    &:focus::before {
       border: 2px solid $gray;
     }
   }
@@ -180,12 +180,13 @@
     margin-bottom: 9px;
     padding-right: 66px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: inset 0 -2px 0 $mint;
     }
 
     &:active {
-      box-shadow: inset 0 -3px 0 $dark-mint;
+      box-shadow: inset 0 -2px 0 $dark-mint;
     }
   }
 
@@ -235,7 +236,8 @@
       line-height: 1.06;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: inset 0 -2px 0 $mint;
     }
   }
@@ -266,7 +268,8 @@
       line-height: 1.06;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: inset 0 -2px 0 $mint;
     }
   }
@@ -285,6 +288,7 @@
     min-height: 140px;
     padding-top: 15px;
     padding-left: 15px;
+    resize: vertical;
 
     &::placeholder {
       opacity: 0.3;
@@ -294,7 +298,8 @@
       line-height: 1.06;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       border: 1px solid $mint;
     }
   }
@@ -356,6 +361,7 @@
         position: relative;
         background-color: $gray;
         padding-bottom: 29px;
+        width: 100%;
       }
 
       &--name {
@@ -368,10 +374,12 @@
         padding-top: 63px;
         padding-left: 24%;
         padding-bottom: 13px;
+        width: 100%;
       }
 
       &--wishes {
         padding-top: 51px;
+        width: 100%;
       }
 
       &--note {
@@ -580,9 +588,9 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      border: 2px solid $dark-gray;
+      border: 1px solid $dark-gray;
       background-color: $white;
-      width: auto;
+      width: 100%;
 
       &::placeholder {
         opacity: 0.3;
@@ -790,7 +798,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      border: 2px solid $dark-gray;
+      border: 1px solid $dark-gray;
       background-color: $white;
 
       &::placeholder {
